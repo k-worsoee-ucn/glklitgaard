@@ -5,3 +5,27 @@
 .logo {
     margin: 2% 12.5%;
 }
+
+html {
+    margin: 0 !important;
+}
+
+.footer-paper {
+    margin: 50% 12.5% 0 12.5%;
+}
+
+.footer-logo-container {
+    background-image: url("../assets/svg/footer-paper.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 25% 12.5% 15%;
+}
+
+.footer-contact {
+    margin-top: 35%;
+}
+
+.footer-nav {
+    margin-top: 50%;
+}
