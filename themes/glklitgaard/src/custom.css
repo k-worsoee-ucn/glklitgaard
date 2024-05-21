@@ -1,0 +1,7 @@
+.dropdown:hover .dropdown.content {
+    @apply block;
+}
+
+.logo {
+    margin: 2% 12.5%;
+}
