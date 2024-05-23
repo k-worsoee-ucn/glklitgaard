@@ -8,12 +8,12 @@
 
 <body <?php body_class() ?>>
 
-    <header class="grid grid-cols-12 grid-rows-2 z-10">
-        <div class="col-span-12 col-start-1 row-start-1 row-span-1 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10"></div>
+    <header class="grid grid-cols-12 grid-rows-2">
+        <div class="col-span-12 col-start-1 row-start-1 row-span-1 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10 shadow-lg"></div>
         <div class="col-start-1 col-span-2 row-start-1 row-span-2">
             <a href="<?php echo site_url() ?>" class="header-logo grid grid-rows-2">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/logo-paper.svg") ?>" alt="" class="row-span-2 row-start-1 col-start-1 col-span-1 w-full">
-                <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Gl. Klitgaard logo" class="logo w-9/12 align-center row-span-2 row-start-1 col-start-1 col-span-1">
+                <img src="<?php echo get_theme_file_uri("/assets/svg/logo-paper.svg") ?>" alt="" class="row-span-2 row-start-1 col-start-1 col-span-1 w-full z-10">
+                <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Gl. Klitgaard logo" class="logo w-9/12 align-center row-span-2 row-start-1 col-start-1 col-span-1 z-20">
             </a>
         </div>
         <nav class="row-span-1 row-start-1 overflow-hidden inline-block col-start-3 col-span-10">

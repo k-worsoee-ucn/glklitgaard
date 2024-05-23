@@ -2,6 +2,15 @@
     @apply block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Kalam;
+    font-weight: bold;
+}
+
+p {
+    font-family: Open Sans;
+}
+
 .logo {
     margin: 2% 12.5%;
 }
@@ -39,4 +48,12 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.fp-hero {
+    background-image: url("../assets/images/heroimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
 }
