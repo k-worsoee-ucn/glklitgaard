@@ -34,10 +34,6 @@ html {
     background-image: url("../assets/svg/fp-wave.svg");
 }
 
-.fp-news-container {
-    background-image: url("../assets/svg/news-paperrip.svg");
-}
-
 .fp-news {
     background-image: url("../assets/svg/news-bg.svg");
     background-position: center;
