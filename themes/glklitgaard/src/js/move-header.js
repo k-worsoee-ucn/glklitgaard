@@ -5,6 +5,8 @@ const AdminBar = document.querySelector("#wpadminbar");
 // Vi gør dette bøde ved load og resize, men da de begge skal gøre det samme, så beder vi bare om at bruge samme funktion
 window.addEventListener("load", ()=>{
     WPAdminBar();
+    //Tailvind stadig ny til mig (victoria) så benytter js for at give padding nok til første sektion så det kan læses
+    document.querySelectorAll("section")[0].style.paddingTop = Header.querySelector("nav").clientHeight+50+"px"
 })
 window.addEventListener("resize",()=>{
     WPAdminBar();
