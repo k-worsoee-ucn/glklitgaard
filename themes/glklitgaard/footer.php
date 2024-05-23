@@ -1,4 +1,5 @@
 <footer class="grid grid-cols-12">
+    <?php wp_footer(); ?>
     <img src="<?php echo get_theme_file_uri("/assets/svg/dragon-scales.svg") ?>" alt="" class="w-full col-start-1 col-span-12 row-span-1 row-start-1 -mt-40">
     <div class="footer-contact row-start-1 row-span-1 col-start-2 col-span-3">
         <h2 class="text-white text-4xl">Kontakt</h2>

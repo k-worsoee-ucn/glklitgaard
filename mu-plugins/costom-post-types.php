@@ -2,7 +2,7 @@
 function PostTypes() {
     register_post_type("Social-Media", array(
         "has_archive" => false,
-        "show_in_rest" => true,
+        "show_in_rest" => false,
         "public" => true,
         "supports" => array(
             "editor",
@@ -18,8 +18,8 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-share"
     ));
-
-    register_post_type("Udlejnings-Muligheder", array(
+    
+    register_post_type("Udlejning", array(
         "has_archive" => true,
         "show_in_rest" => true,
         "public" => true,
@@ -28,6 +28,9 @@ function PostTypes() {
             "title",
             "thumbnail",
             "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "udlejning"
         ),
         "labels" => array(
             "name" => "Udlejning Muligheder",
@@ -50,6 +53,9 @@ function PostTypes() {
             "thumbnail",
             "excerpt"
         ),
+        "rewrite" => array(
+            "slug" => "sevraerdighed"
+        ),
         "labels" => array(
             "name" => "Seværdigheder",
             "add_new_item" => "Tilføj Seværdighed",
@@ -70,6 +76,9 @@ function PostTypes() {
             "title",
             "thumbnail",
             "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "faciliteter"
         ),
         "labels" => array(
             "name" => "Faciliteter",
