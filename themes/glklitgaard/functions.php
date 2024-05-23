@@ -1,9 +1,14 @@
-<?php
+<?php //functions.php er vores mellemman til at lade stlyes, scripts og mere forekomme.
 
-function theme_enqueue_styles() {
+function theme_enqueue_styles() {  
+    //tilføjer google fonts til siden
+    wp_enqueue_style("Kalam", "https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+    wp_enqueue_style("open-sans", "https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
     // Tilføjer CSS filer til siden
     wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/src/output.css', array(), '1.0.0', 'all');
     wp_enqueue_style('custom', get_template_directory_uri() . '/src/custom.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('custom-archive-single', get_template_directory_uri() . '/src/custom-archive-single.css', array(), '1.0.0', 'all');
 
     // Tilføjer JavaScript Filer til siden
     wp_enqueue_script("HeadernAdminBar", get_theme_file_uri("/src/js/move-header.js"), array(),'1.0', array('strategy'  => 'defer',));

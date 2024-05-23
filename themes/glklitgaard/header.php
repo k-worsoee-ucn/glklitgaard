@@ -9,7 +9,7 @@
 <body <?php body_class() ?> class="w-full">
 
     <header class="grid grid-cols-12 grid-rows-1 z-10 fixed h-fit drop-shadow-md w-full">
-        <div class="col-span-12 col-start-1 row-start-1 row-span-1 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10"></div>
+        <div class=" opacity-90 col-span-12 col-start-1 row-start-1 row-span-1 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10"></div>
         <div class="col-start-1 col-span-2 row-start-1">
             <a href="<?php echo site_url() ?>" class="header-logo grid grid-rows-1">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/logo-paper.svg"));?>
@@ -94,4 +94,4 @@
             </a>
         </nav>
     </header>
-    <main class="grid grid-cols-12 min-h-screen max-w-full">
+    <main class="grid grid-cols-12 max-w-full">
