@@ -594,6 +594,10 @@ video {
   top: 33.333333%;
 }
 
+.top-1\/4 {
+  top: 25%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1105,6 +1109,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1239,6 +1248,14 @@ video {
 @media (min-width: 1024px) {
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
+  .lg\:col-span-10 {
+    grid-column: span 10 / span 10;
   }
 
   .lg\:col-start-3 {

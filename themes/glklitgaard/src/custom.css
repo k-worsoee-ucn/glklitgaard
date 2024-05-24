@@ -59,6 +59,8 @@ html {
     grid-column: 1/span 12;
     z-index: 4;
     margin-bottom: -25px;
+    height: 25px;
+    width: 100%;
     background-color: revert;
 }
 .rip > svg{
@@ -83,6 +85,7 @@ h3{font-size: 1.25rem;}
 }
 
 .knap{
+    margin: auto auto 10px auto;
     border-radius: 25px;
     font-weight: 600;
     background-color: rgb(34 211 238 / var(--tw-bg-opacity));

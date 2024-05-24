@@ -10,6 +10,7 @@
     height: 100%;
     width: 100%;
     z-index: 1;
+    overflow: hidden;
 }
 
 .inside-pic-drop > img{
@@ -20,6 +21,12 @@
     opacity: 0.85;
     z-index: -1;
     max-height: 250px;
+    transition: 150ms ease-in-out;
+}
+.inside-pic-drop > img:hover{
+    transform: scale(1.2);
+    filter: brightness(1.1);
+    opacity: 0.75;
 }
 
 .tape{
