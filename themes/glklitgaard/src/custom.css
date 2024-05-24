@@ -86,15 +86,22 @@ h3{font-size: 1.25rem;}
     border-radius: 25px;
     font-weight: 600;
     background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    transition: ease-in-out 150ms;
+}
+.knap:hover{
+    font-weight: 600;
+    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    filter: brightness(1.1);
+    transform: scale(1.1);
 }
 
 .Footer-deco{
     width: 110%;
     margin-left: -10%;
-    filter: hue-rotate(90deg) contrast(2) saturate(0.5);
-    opacity: 0.35;
+    filter: hue-rotate(90deg) saturate(0.5);
+    opacity: 0.5;
     z-index: -1;
-    mask-image: linear-gradient(0deg, rgba(1,54,8,1) 0%, rgba(28,204,7,0) 100%);
+    mask-image: linear-gradient(180deg, rgba(1, 30, 4, 0) 20%, rgba(255, 255, 255, 0.91) 100%);
 }
 
 #Foot-Rip{
@@ -122,6 +129,6 @@ h3{font-size: 1.25rem;}
 #Foot-Rip > svg:last-of-type{
     fill: #6B8C23;
     z-index: 4;
-    top: 0;
+    top: 5px;
     opacity: 1;
 }

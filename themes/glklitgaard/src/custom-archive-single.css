@@ -40,3 +40,7 @@
     bottom: 0;
     right: -50px;
 }
+
+.Waves > svg{
+    background-repeat: repeat;
+}

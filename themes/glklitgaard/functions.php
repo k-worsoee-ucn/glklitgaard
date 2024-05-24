@@ -12,6 +12,7 @@ function theme_enqueue_styles() {
 
     // Tilføjer JavaScript Filer til siden
     wp_enqueue_script("HeadernAdminBar", get_theme_file_uri("/src/js/move-header.js"), array(),'1.0', array('strategy'  => 'defer',));
+    wp_enqueue_script("MovingWaves", get_theme_file_uri("/src/js/move-wave.js"), array(),'1.0', array('strategy'  => 'defer',));
 }
 // Disse "Add_action" siger bare hvilken funktion der skal køres og hvornår
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
