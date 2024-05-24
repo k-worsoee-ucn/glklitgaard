@@ -34,5 +34,26 @@
             </div>
         </div>
     </section>
+    <section class="col-span-12 grid grid-cols-12 fam-kallmayer -mt-10 z-20">
+        <img src="<?php echo get_theme_file_uri("/assets/images/famkallmayer.png") ?>" alt="" class="col-span-6 -mt-20 w-full">
+        <div class="col-span-6 mx-10 text-center grid grid-rows-5 fam-wave">
+            <h2 class="text-4xl font-normal row-start-1 mt-28">Vi er Familien Kallmayer</h2>
+            <div class="row-start-2 text-lg">
+                <p>
+                    I 2005 valgte vores familie at forfølge vores drøm om at drive en campingplads. Efter at have overvejet flere muligheder, fandt vi os selv forelskede i Gl. Klitgaard Camping. Vi forlod vores jobs og kastede os ud i det ukendte.
+                </p>
+                <p class="mt-10">
+                17 år senere er campingpladsen blevet vores hjem og arbejdsplads, hvor vi nyder livet blandt glade mennesker. Vores børn, Jonas, Maja og Emil, har også bidraget til pladsen gennem årene, hvilket har været en berigende oplevelse for os alle.
+                </p>
+            </div>
+            <div class="row-start-3 mt-10">
+                <a href=""><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere om os</button></a>
+            </div>
+            <h3 class="row-start-4 mx-auto font-bold">Vi håber vi ses på Gl. Klitgaard Camping.</h3>
+        </div>
+    </section>
+    <section class="forecastContainer">
+        <h2>Kommende vejr</h2>
+    </section>
 </main>
 <?php get_footer() ?>

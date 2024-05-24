@@ -19,6 +19,10 @@ html {
     margin: 0 !important;
 }
 
+button {
+    @apply hover:shadow-lg;
+}
+
 .footer-paper {
     margin: 50% 12.5% 0 12.5%;
 }
@@ -56,4 +60,10 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
+}
+
+.fam-kallmayer {
+    background-image: url("../assets/svg/fambg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
