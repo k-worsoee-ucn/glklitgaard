@@ -34,6 +34,15 @@ function remove_admin_login_header(){
 };
 add_action('get_header', 'remove_admin_login_header');
 
+// Tilføjer thumbnails som en mulighed
+function features() {
+    add_theme_support('post-thumbnails');
+    add_image_size("big-thumb", 500, 1000, true);
+    add_image_size("small-thumb", 250, 250, true);
+};
+
+add_action('after_setup_theme', 'features');
+
 
 // Giv slut, nogle gange kan functions fucke up hvis den ikke har et slut punkt
 ?>

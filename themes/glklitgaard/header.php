@@ -8,7 +8,7 @@
 
 <body <?php body_class() ?> class="w-full">
 
-    <header class="grid grid-cols-12 grid-rows-1 z-10 fixed h-fit drop-shadow-md w-full">
+    <header class="grid grid-cols-12 grid-rows-1 z-50 fixed h-fit drop-shadow-md w-full">
         <div class=" opacity-90 col-span-12 col-start-1 row-start-1 row-span-1 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10"></div>
         <div class="col-start-1 col-span-2 row-start-1">
             <a href="<?php echo site_url() ?>" class="header-logo grid grid-rows-1">
