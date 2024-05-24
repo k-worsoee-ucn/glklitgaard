@@ -25,7 +25,7 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
         // Convert the object to an array of arrays for each date
         const result = Object.values(sortedData);
         const container = document.querySelector(".forecastContainer")
-        container.classList.add(`grid-cols-${result.length}`)
+        container.classList.add(`grid-cols-${result.length.toString()}`)
         //To contain the highest temp per day
         const highestTemps = [];
         //To contain the lowest temp per day

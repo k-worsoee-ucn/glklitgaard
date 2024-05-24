@@ -1,2 +1,1 @@
-Weatherapp.js:
- - When setting grid columns as a js function, the columns are not applied to the DOM.
+None to report

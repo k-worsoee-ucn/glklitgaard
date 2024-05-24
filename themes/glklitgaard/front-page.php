@@ -54,7 +54,7 @@
     </section>
     <section class="col-span-12">
         <h2 class="row-start-1 row-span-1 col-span-5 text-center text-4xl font-normal">Kommende vejr</h2>
-        <div class="forecastContainer grid gap-10 mx-40 grid-cols-6"></div>
+        <div class="forecastContainer grid gap-10 mx-40"></div>
     </section>
 </main>
 <?php get_footer() ?>
