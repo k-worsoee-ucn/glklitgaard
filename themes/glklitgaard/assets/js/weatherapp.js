@@ -24,7 +24,8 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
 
         // Convert the object to an array of arrays for each date
         const result = Object.values(sortedData);
-
+        const container = document.querySelector(".forecastContainer")
+        container.classList.add(`grid-cols-${result.length}`)
         //To contain the highest temp per day
         const highestTemps = [];
         //To contain the lowest temp per day
@@ -56,7 +57,13 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
             const lowTemp = Math.round(Math.min(...temps))
 
             // Get the weather icon code from the first entry of the day
-            const weatherIconCode = dayData[0].weather[0].icon
+            const IconCode = dayData[0].weather[0].icon;
+            let weatherIconCode = IconCode;
+
+            //Replace night icon with day icon
+            if(IconCode.includes("n")) {
+                weatherIconCode = IconCode.replace(/n/g, "d")
+            }
 
             // Store the highest and lowest temperatures for the day
             highestTemps.push(highTemp);
@@ -66,11 +73,12 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
             const container = document.querySelector(".forecastContainer")
             // Create a new div for the day's forecast
             const forecastDay = document.createElement("div")
-            forecastDay.classList.add("forecastDay")
+            forecastDay.classList.add("forecastDay", "grid", "bg-white", "shadow-lg", "py-10")
             container.append(forecastDay);
 
             // Create an element for the day name
             const dayName = document.createElement("h3")
+            dayName.classList.add("dayName", "text-center")
             const dateStr = formatDate(dayData[0].dt_txt)
 
             const dayNameString = getDayName(dateStr, "da-DK")
@@ -79,19 +87,20 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
 
             // Create an element for the weather icon
             const weatherIcon = document.createElement("img")
+            weatherIcon.classList.add("m-auto")
             weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${weatherIconCode}@2x.png`)
 
             // Create elements for the high and low temperatures
             const dayHigh = document.createElement("p")
             dayHigh.textContent = highTemp + "\u00B0";
-            dayHigh.classList.add("dayHigh");
+            dayHigh.classList.add("dayHigh", "text-4xl", "font-bold", "text-center");
             const dayLow = document.createElement("p")
             dayLow.textContent = lowTemp + "\u00B0";
-            dayLow.classList.add("dayLow")
+            dayLow.classList.add("dayLow", "text-4xl", "text-center")
 
             // Create a container for the temperatures and append the high and low temps
             const tempContainer = document.createElement("div")
-            tempContainer.classList.add("tempContainer")
+            tempContainer.classList.add("tempContainer", "grid", "grid-cols-2")
             tempContainer.append(dayHigh, dayLow)
 
             // Append the day name, weather icon, and temperature container to the forecast day div
@@ -99,29 +108,29 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
 
             // Create a container for additional weather details (humidity and wind)
             const additWeather = document.createElement("div")
-            additWeather.classList.add("additWeather")
+            additWeather.classList.add("additWeather", "grid")
             forecastDay.append(additWeather)
 
             // Create containers for humidity and wind
             const humidContainer = document.createElement("div")
-            humidContainer.classList.add("humidityContainer")
+            humidContainer.classList.add("humidityContainer", "grid")
             const windContainer = document.createElement("div")
-            windContainer.classList.add("windContainer")
+            windContainer.classList.add("windContainer", "grid")
             additWeather.append(humidContainer, windContainer)
 
             // Create and append the humidity icon and value
             const humidityIcon = document.createElement("i")
-            humidityIcon.classList.add("fa-solid")
-            humidityIcon.classList.add("fa-droplet")
+            humidityIcon.classList.add("fa-solid", "fa-droplet", "text-right", "my-auto", "mx-0", "mt-1")
             const humidity = document.createElement("p")
+            humidity.classList.add("text-left")
             humidity.textContent = dayData[0].main.humidity + "%"
             humidContainer.append(humidityIcon, humidity)
 
             // Create and append the wind icon and value
             const windIcon = document.createElement("i")
-            windIcon.classList.add("fa-solid")
-            windIcon.classList.add("fa-wind")
+            windIcon.classList.add("fa-solid", "fa-wind", "text-right", "my-auto", "mx-0", "mt-1")
             const wind = document.createElement("p")
+            wind.classList.add("text-left")
             wind.textContent = dayData[0].wind.speed.toFixed(1) + "m/s"
             windContainer.append(windIcon, wind)
 

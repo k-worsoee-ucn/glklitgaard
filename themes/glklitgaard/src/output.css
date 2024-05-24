@@ -733,6 +733,11 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 .-mt-20 {
   margin-top: -5rem;
 }
@@ -904,6 +909,14 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -922,6 +935,14 @@ video {
 
 .gap-20 {
   gap: 5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -1065,6 +1086,16 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-normal {

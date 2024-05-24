@@ -52,8 +52,9 @@
             <h3 class="row-start-4 mx-auto font-bold">Vi håber vi ses på Gl. Klitgaard Camping.</h3>
         </div>
     </section>
-    <section class="forecastContainer">
-        <h2>Kommende vejr</h2>
+    <section class="col-span-12">
+        <h2 class="row-start-1 row-span-1 col-span-5 text-center text-4xl font-normal">Kommende vejr</h2>
+        <div class="forecastContainer grid gap-10 mx-40 grid-cols-6"></div>
     </section>
 </main>
 <?php get_footer() ?>

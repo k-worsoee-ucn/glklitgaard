@@ -30,5 +30,6 @@
             <li><a class="hover:underline" href="#">NAV POINT</a></li>
         </ul>
     </div>
+    <?php wp_footer() ?>
 </footer>
 </body>
