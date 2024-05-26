@@ -52,9 +52,12 @@
             <h3 class="row-start-4 mx-auto font-bold">Vi håber vi ses på Gl. Klitgaard Camping.</h3>
         </div>
     </section>
-    <section class="col-span-12">
-        <h2 class="row-start-1 row-span-1 col-span-5 text-center text-4xl font-normal">Kommende vejr</h2>
-        <div class="forecastContainer grid gap-10 mx-40"></div>
+    <section class="col-span-12 py-40 weatherAndActivities -mt-52 z-20">
+        <h2 class="row-start-1 row-span-1 col-span-5 text-center text-4xl font-normal mt-20">Kommende vejr</h2>
+        <div class="forecastContainer grid gap-10 mx-40 mt-10"></div>
+        <div class="mt-20">
+            <h2 class="text-center text-4xl font-normal">Kommende aktiviteter</h2>
+        </div>
     </section>
 </main>
 <?php get_footer() ?>

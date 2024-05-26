@@ -68,6 +68,12 @@ button {
     background-size: cover;
 }
 
+.weatherAndActivities {
+    background-image: url("../assets/images/weatherbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .additWeather {
     margin: 5% 5%;
     grid-template-columns: 40% 60%;

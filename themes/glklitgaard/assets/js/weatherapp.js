@@ -69,8 +69,6 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lo
             highestTemps.push(highTemp);
             lowestTemps.push(lowTemp);
 
-            // Get the container element for the forecast
-            const container = document.querySelector(".forecastContainer")
             // Create a new div for the day's forecast
             const forecastDay = document.createElement("div")
             forecastDay.classList.add("forecastDay", "grid", "bg-white", "shadow-lg", "py-10")
