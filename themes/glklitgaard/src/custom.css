@@ -89,13 +89,15 @@ h3{font-size: 1.25rem;}
     border-radius: 25px;
     font-weight: 600;
     background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-    transition: ease-in-out 150ms;
+    transition: ease-in-out 250ms;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.255);
 }
 .knap:hover{
     font-weight: 600;
     background-color: rgb(34 211 238 / var(--tw-bg-opacity));
     filter: brightness(1.1);
     transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.255);
 }
 
 .Footer-deco{
@@ -134,4 +136,30 @@ h3{font-size: 1.25rem;}
     z-index: 4;
     top: 5px;
     opacity: 1;
+}
+
+.Waves>svg{
+    width: 150%;
+}
+
+.Sunset-bg{
+    background-image: url("../assets/images/solnedgang-baggrund.jpg");
+    opacity: 0.75;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.paper-rip > svg{
+    width: 100%;
+}
+.paper-rip > svg > path{fill: #fef9c3;}
+
+.paper-gradient > path{
+    fill: #fef9c3;
+}
+.paper-gradient{
+    mask-image: linear-gradient(#fef9c3, #c0bc93);
 }

@@ -12,7 +12,7 @@ window.addEventListener("load",()=>{
             window.addEventListener("scroll",()=>{
                 const WaveLength =  new WebKitCSSMatrix(Wave.style.transform)["m41"];
                 if(window.scrollY > ScrollWhen && window.scrollY < ScrollStop && WaveLength < Wave.clientWidth){
-                    const change = (window.scrollY-ScrollWhen)/2.5;
+                    const change = (window.scrollY-ScrollWhen)/1.5;
                     Wave.style.transform = "translateX(-"+change+"px)";
                 }
             })

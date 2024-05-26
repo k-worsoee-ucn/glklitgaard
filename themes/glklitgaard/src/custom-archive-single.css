@@ -3,6 +3,7 @@
     opacity: 0;
     height: 10px;
     margin: 25px 0;
+    display: block;
 }
 
 .inside-pic-drop{
@@ -21,14 +22,25 @@
     opacity: 0.85;
     z-index: -1;
     max-height: 250px;
-    transition: 150ms ease-in-out;
+    filter: brightness(1);
+    transition: 250ms ease-in-out;
 }
 .inside-pic-drop > img:hover{
     transform: scale(1.2);
     filter: brightness(1.1);
     opacity: 0.75;
 }
-
+.simple-pic-drop{
+    transition: 250ms ease-in-out;
+    filter: brightness(1);
+}
+.simple-pic-drop:hover{
+    transform: rotate(-5deg);
+    filter: brightness(1.1);
+}
+.simple-pic-drop:hover>div>svg{
+    filter: brightness(1);
+}
 .tape{
     position: absolute;
     max-width: 150px;
@@ -36,6 +48,7 @@
     height: 25px;
     rotate: -30deg;
     z-index: 5;
+    opacity: 0.60;
 }
 
 .tape-left{
@@ -50,4 +63,8 @@
 
 .Waves > svg{
     background-repeat: repeat;
+}
+
+.fade{
+    mask-image: linear-gradient(black, black 50%, rgba(0, 0, 0, 0));
 }
