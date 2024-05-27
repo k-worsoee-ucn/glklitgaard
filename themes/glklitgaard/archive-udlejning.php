@@ -64,8 +64,8 @@ $Slideshow = 1;
                 </div>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();//giv a-tag (knappen) linket til posten?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));//ligende med tidligere ting, men vi henter linket fra en seperat fil og sætter ind som href'en.?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();//giv a-tag (knappen) linket til posten?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));//ligende med tidligere ting, men vi henter linket fra en seperat fil og sætter ind som href'en.?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
@@ -109,8 +109,8 @@ $Slideshow = 1;
                 </div>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-1 z-10">
@@ -149,8 +149,8 @@ $Slideshow = 1;
                         </div>
                     </div>
                     <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                        <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                        <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                        <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                        <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
                     </div>
         
                     <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-1 z-10">
@@ -219,8 +219,8 @@ if($AmountA){
                 </div>
             </div>
             <div class="md:col-span-2 lg:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="tape tape-left">
@@ -257,8 +257,8 @@ if($AmountA){
                 </div>
             </div>
             <div class="md:col-span-2 lg:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="tape tape-left">
@@ -315,8 +315,8 @@ $AndetMæng = 1;?>
                 </div>
             </div>
             <div class="w-11/12 md:10/12 lg:w-8/12 mx-auto inline-flex justify-between mt-5">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
             <div class="h-fit w-full paper-rip absolute left-0 top-full">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>

@@ -28,21 +28,51 @@ button {
 }
 
 .footer-logo-container {
-    background-image: url("../assets/svg/footer-paper.svg");
-    padding:  25px 10px;
-    height: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 25% 12.5% 15%;
+    position: relative;
+    padding:  3rem 2rem;
+    height: fit-content;
+}
+.footer-logo-container > svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
-.footer-contact {
-    margin-top: 35%;
+.footer-nav > ul > li > div{
+    background-color: #fef9c3;
+    border-radius: 0.25rem;
+    width: 0;
+    z-index: 1;
+    transition: 250ms ease-in-out;
 }
 
-.footer-nav {
-    margin-top: 50%;
+.footer-nav > ul > li:hover > div{
+    width: 100%;
+    background-color: #B6D936;
+}
+.footer-nav > ul > li > a{transition: 250ms ease-in-out;}
+.footer-nav > ul > li:hover > a{
+    width: 100%;
+    color: #fef9c3;
+    transform: scale(1.05);
+}
+.SocialM > i {
+    transition: 250ms ease-in-out;
+    --tw-drop-shadow: drop-shadow(0 1px 1px rgba(0,0,0,0.05));}
+.SocialM:hover > i{
+    transform: scale(1.1);
+    color: #B6D936;
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
+}
+.hover-effect-foot, .hover-effect-foot > a, .hover-effect-foot > i{
+    transition: 250ms;
+}
+.hover-effect-foot:hover{
+    transform: scale(1.1);
+    color: #fef9c3;
 }
 
 .fp-welcome {
@@ -98,16 +128,15 @@ h3{font-size: 1.25rem;}
 }
 
 .knap{
-    margin: auto auto 10px auto;
     border-radius: 25px;
     font-weight: 600;
-    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    background-color: #6BD9F2;
     transition: ease-in-out 250ms;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.255);
 }
 .knap:hover{
     font-weight: 600;
-    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    background-color: #90e9fd;
     filter: brightness(1.1);
     transform: scale(1.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.255);
@@ -136,13 +165,13 @@ h3{font-size: 1.25rem;}
     z-index: 3;
     top: -10px;
     position: absolute;
-    opacity: 0.75;
+    opacity: 1;
 }
 #Foot-Rip > svg:first-of-type{
     fill: rgb(254 249 195 / var(--tw-bg-opacity));
     z-index: 2;
     top: -20px;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 #Foot-Rip > svg:last-of-type{
     fill: #6B8C23;
@@ -213,4 +242,9 @@ h3{font-size: 1.25rem;}
 
 .forecastDay {
     padding: 10% 0;
+}
+
+.SocialM > i{
+    font-size: 2rem;
+    color: #6B8C23;
 }

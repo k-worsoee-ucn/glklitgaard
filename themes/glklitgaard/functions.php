@@ -20,8 +20,11 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 
 // Laver menuer muligt i WP-admin siden, bruger til navigationsbaren
-function register_menu() {
-    register_nav_menu('new-menu',( 'Main-Menu' ));
+function register_menu(){
+    register_nav_menus( array(
+        'main_menu' => 'Main Menu',
+        'footer_menu' => 'Footer Menu',
+    ) );
 };
 add_action( 'init', 'register_menu' );
 
@@ -44,6 +47,71 @@ function features() {
 };
 
 add_action('after_setup_theme', 'features');
+
+//tilføjer fields til generalt settingen på wp-admin
+function add_fields(){
+    add_settings_field(
+        "lokation", // id til fielden
+        "Adresse", // Titel
+        "adress_output", //callback (se lægnere nede)
+        "general", //hvilken indstillings side den fremvises på
+    );
+    register_setting( // registrere informationen :)
+        "general",
+        "lokation"
+    );
+
+    //^ indsæt det overnover til callback
+    function adress_output($args){
+        // vil bare fremvise hvordan det ser ud i instillings siden
+        echo "<input type='text' id='lokation' name='lokation' value=". get_option("lokation") .">";
+    }; // alt neden under er det samme men for forskellige fields
+
+    add_settings_field(
+        "by", // id til fielden
+        "By", // Titel
+        "town_output", //callback (se lægnere nede)
+        "general", //hvilken indstillings side den fremvises på
+    );
+    register_setting(
+        "general",
+        "by"
+    );
+    function town_output($args){
+        echo "<input type='text' id='by' name='by' value=". get_option("by") .">";
+    };
+
+    add_settings_field(
+        "kontakt-email", // id til fielden
+        "Kontakt Email", // Titel
+        "email_output", //callback (se lægnere nede)
+        "general", //hvilken indstillings side den fremvises på
+    );
+    register_setting(
+        "general",
+        "kontakt-email"
+    );
+    function email_output($args){
+        echo "<input type='text' id='kontakt-email' name='kontakt-email' value=". get_option("kontakt-email") .">";
+    };
+
+    add_settings_field(
+        "mobil-nummer", // id til fielden
+        "Mobil Nummer", // Titel
+        "phone_output", //callback (se lægnere nede)
+        "general", //hvilken indstillings side den fremvises på
+    );
+    register_setting(
+        "general",
+        "mobil-nummer"
+    );
+    function phone_output($args){
+        echo "<input type='text' id='mobil-nummer' name='mobil-nummer' value=". get_option("mobil-nummer") .">";
+    };
+};
+add_action('admin_init', 'add_fields');
+
+
 
 
 // Giv slut, nogle gange kan functions fucke up hvis den ikke har et slut punkt
