@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.php"],
+  content: ["./*.php", "./assets/js/*.js"],
   theme: {
     extend: {
       colors: {
@@ -15,5 +15,11 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /grid-cols-\d+/,
+      variants: ['sm', 'md', 'lg', 'xl'],
+    },
+  ],
 }
 
