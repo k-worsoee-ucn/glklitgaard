@@ -214,3 +214,21 @@ h3{font-size: 1.25rem;}
 .forecastDay {
     padding: 10% 0;
 }
+
+.horse-hero {
+    background-image: url("../assets/images/hest-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+.horse-container {
+    background-image: url("../assets/svg/horserip.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.horse-img {
+    mask-image: url(../assets/svg/horseimgrip.svg);
+    mask-mode: alpha;
+}

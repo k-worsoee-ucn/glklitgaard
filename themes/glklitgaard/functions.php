@@ -41,6 +41,7 @@ function features() {
     add_theme_support('post-thumbnails');
     add_image_size("big-thumb", 500, 1000, true);
     add_image_size("small-thumb", 250, 250, true);
+    add_image_size("horse", 300, 350, true); 
 };
 
 add_action('after_setup_theme', 'features');

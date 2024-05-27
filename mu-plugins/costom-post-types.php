@@ -90,6 +90,54 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-coffee"
     ));
+
+    register_post_type("Aktiviteter", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail",
+            "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "aktiviteter"
+        ),
+        "labels" => array(
+            "name" => "Aktiviteter",
+            "add_new_item" => "Tilføj Aktivitet",
+            "add_new" => "Tilføj Aktivitet",
+            "edit_item" => "Ænder Aktivitet",
+            "all_items" => "Alle Aktiviteter",
+            "singular_name" => "Aktivitet",
+        ),
+        "menu_icon" => "dashicons-buddicons-activity"
+    ));
+
+    register_post_type("Heste", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail",
+            "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "vores-heste"
+        ),
+        "labels" => array(
+            "name" => "Vores Heste",
+            "add_new_item" => "Tilføj Hest",
+            "add_new" => "Tilføj Hest",
+            "edit_item" => "Ænder Hest",
+            "all_items" => "Alle Heste",
+            "singular_name" => "Hest",
+        ),
+        "menu_icon" => "dashicons-carrot"
+    ));
 };
 add_action('init', 'PostTypes');
 ?>

@@ -940,6 +940,10 @@ video {
   margin-top: auto;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -999,6 +1003,30 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-3\/5 {
+  height: 60%;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-20 {
@@ -1310,6 +1338,14 @@ video {
 
 .p-7 {
   padding: 1.75rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .px-10 {
