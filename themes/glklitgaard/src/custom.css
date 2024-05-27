@@ -2,12 +2,25 @@
     @apply block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Kalam;
+    font-weight: bold;
+}
+
+p {
+    font-family: Open Sans;
+}
+
 .logo {
     margin: auto 12.5%;
 }
 
 html {
     margin: 0 !important;
+}
+
+button {
+    @apply hover:shadow-lg;
 }
 
 .footer-paper {
@@ -162,4 +175,42 @@ h3{font-size: 1.25rem;}
 }
 .paper-gradient{
     mask-image: linear-gradient(#fef9c3, #c0bc93);
+}
+
+.fp-hero {
+    background-image: url("../assets/images/heroimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.fam-kallmayer {
+    background-image: url("../assets/svg/fambg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weatherAndActivities {
+    background-image: url("../assets/images/weatherbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.additWeather {
+    margin: 5% 5%;
+    grid-template-columns: 40% 60%;
+}
+
+.windContainer, .humidityContainer {
+    grid-template-columns: 1fr 1fr;
+	gap: 5%;
+}
+
+.dayName {
+    font-size: 1.5rem;
+}
+
+.forecastDay {
+    padding: 10% 0;
 }
