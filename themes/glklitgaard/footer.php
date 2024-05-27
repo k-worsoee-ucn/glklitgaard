@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
-=======
 </main>
-<footer class="grid grid-cols-12 z-40 relative bg-brand-darkgreen">
+<footer class="grid grid-cols-12 z-50 relative bg-brand-darkgreen">
     <?php wp_footer(); ?>
     <div id="Foot-Rip" class="w-full col-start-1 col-span-12 row-span-1 row-start-1 absolute -top-1">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
@@ -43,4 +41,3 @@
     </div>
 </footer>
 </body>
->>>>>>> Stashed changes

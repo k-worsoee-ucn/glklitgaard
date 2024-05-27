@@ -165,8 +165,7 @@ $Slideshow = 1;
         $HytteMæng++; }; ?>
 </div>
     <div class="Waves absolute top-1/4 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg"));
-        // ^ ?>
+        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?>
     </div>
     <hr class="hidden-push">
     <div class="h-fit w-full rip">

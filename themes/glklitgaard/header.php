@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="m-0">
 
 <head>
     <meta charset="<?php bloginfo("charset") ?>">
     <?php wp_head() ?>
 </head>
 
-<body <?php body_class() ?>>
+<body <?php body_class() ?> class="w-full">
 
-    <header class="grid grid-cols-12">
-        <div class="col-span-2">
-            <a href="<?php echo site_url() ?>" class="header-logo grid grid-rows-2">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/logo-paper.svg") ?>" alt="" class="row-span-2 row-start-1 col-start-1 col-span-1 w-full">
-                <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Gl. Klitgaard logo" class="logo w-9/12 align-center row-span-2 row-start-1 col-start-1 col-span-1">
+    <header class="grid grid-cols-12 grid-rows-1 z-50 fixed h-fit drop-shadow-md w-full">
+        <div class=" opacity-90 col-span-12 col-start-1 row-start-1 row-span-1 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10"></div>
+        <div class="col-start-1 col-span-2 row-start-1">
+            <a href="<?php echo site_url() ?>" class="header-logo grid grid-rows-1">
+                <?php echo file_get_contents( get_theme_file_uri("/assets/svg/logo-paper.svg"));?>
+                <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Gl. Klitgaard logo" class="logo z-10 w-9/12 h-auto max-h-20 align-center row-span-1 row-start-1 col-start-1 col-span-1 object-contain">
             </a>
         </div>
-        <nav class="overflow-hidden inline-block col-span-10 bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen">
-            <div class="bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen"></div>
+        <nav class="row-span-1 row-start-1 overflow-hidden inline-block col-start-3 col-span-10">
             <div class="dropdown float-left overflow-hidden border-none outline-none bg-inherit m-0 px-4 py-3 group">
                 <button class="drop-btn border-none outline-none bg-inherit m-0 px-4 py-3 group-hover:bg-main-brand-color group-hover:text-white">Praktisk info
                     <i class="fa fa-caret-down"></i>
@@ -94,3 +94,4 @@
             </a>
         </nav>
     </header>
+    <main class="grid grid-cols-12 max-w-full">

@@ -3,5 +3,163 @@
 }
 
 .logo {
-    margin: 2% 12.5%;
+    margin: auto 12.5%;
+}
+
+html {
+    margin: 0 !important;
+}
+
+.footer-paper {
+    margin: 50% 12.5% 0 12.5%;
+}
+
+.footer-logo-container {
+    background-image: url("../assets/svg/footer-paper.svg");
+    padding:  25px 10px;
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 25% 12.5% 15%;
+}
+
+.footer-contact {
+    margin-top: 35%;
+}
+
+.footer-nav {
+    margin-top: 50%;
+}
+
+.fp-welcome {
+    background-image: url("../assets/svg/fp-wave.svg");
+}
+
+.fp-news {
+    background-image: url("../assets/svg/news-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header-logo{
+    margin-bottom: -2rem;
+    height: 120%;
+}
+.header-logo>svg{
+    height: 100%;
+    grid-row-start: 1;
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 1;
+    grid-column-start: 1;
+    width: 100%;
+}
+
+.rip{
+    grid-column: 1/span 12;
+    z-index: 4;
+    margin-bottom: -25px;
+    height: 25px;
+    width: 100%;
+    background-color: revert;
+}
+.rip > svg{
+    width: 100%;
+    height: 100%;
+    fill:rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+section{height: fit-content; grid-column: 1/ span 12;}
+
+h1,h2,h3,h4,h5{
+    font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
+}
+p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
+
+h1{font-size: 2rem;}
+h2{font-size: 1.5rem;}
+h3{font-size: 1.25rem;}
+
+.wavey-section{
+    z-index: 4;
+}
+
+.knap{
+    margin: auto auto 10px auto;
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    transition: ease-in-out 250ms;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.255);
+}
+.knap:hover{
+    font-weight: 600;
+    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    filter: brightness(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.255);
+}
+
+.Footer-deco{
+    width: 110%;
+    margin-left: -10%;
+    filter: hue-rotate(90deg) saturate(0.5);
+    opacity: 0.5;
+    z-index: -1;
+    mask-image: linear-gradient(180deg, rgba(1, 30, 4, 0) 20%, rgba(255, 255, 255, 0.91) 100%);
+}
+
+#Foot-Rip{
+    top: -30px;
+    height: 60px;
+    position: absolute;
+}
+
+#Foot-Rip > svg{
+    width: 100%;
+    fill: #B6D936;
+    rotate: 180deg;
+    height: 30px;
+    z-index: 3;
+    top: -10px;
+    position: absolute;
+    opacity: 0.75;
+}
+#Foot-Rip > svg:first-of-type{
+    fill: rgb(254 249 195 / var(--tw-bg-opacity));
+    z-index: 2;
+    top: -20px;
+    opacity: 0.5;
+}
+#Foot-Rip > svg:last-of-type{
+    fill: #6B8C23;
+    z-index: 4;
+    top: 5px;
+    opacity: 1;
+}
+
+.Waves>svg{
+    width: 150%;
+}
+
+.Sunset-bg{
+    background-image: url("../assets/images/solnedgang-baggrund.jpg");
+    opacity: 0.75;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.paper-rip > svg{
+    width: 100%;
+}
+.paper-rip > svg > path{fill: #fef9c3;}
+
+.paper-gradient > path{
+    fill: #fef9c3;
+}
+.paper-gradient{
+    mask-image: linear-gradient(#fef9c3, #c0bc93);
 }
