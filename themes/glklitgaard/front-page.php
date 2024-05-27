@@ -1,5 +1,4 @@
 <?php get_header() ?>
-<main class="grid grid-cols-12 -mt-20">
     <section class="fp-hero col-span-12 text-center text-4xl">
         <h1 class="col-span-12 mt-32">Velkommen til</h1>
         <h1 class="col-span-12 text-secondary-brand-color">Gl. Klitgaard Camping & Hytteby</h1>
@@ -59,5 +58,4 @@
             <h2 class="text-center text-4xl font-normal">Kommende aktiviteter</h2>
         </div>
     </section>
-</main>
 <?php get_footer() ?>
