@@ -49,7 +49,7 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content hidden absolute min-w-40 z-10 shadow-lg group-hover:block">
-                    <a href="#" class="float-none px-4 py-3 no-underline block text-left text-black bg-white hover:bg-main-brand-color hover:text-white">Vores heste</a>
+                    <a href="<?php echo get_site_url() . "/vores-heste" ?>" class="float-none px-4 py-3 no-underline block text-left text-black bg-white hover:bg-main-brand-color hover:text-white">Vores heste</a>
                     <a href="#" class="float-none px-4 py-3 no-underline block text-left text-black bg-white hover:bg-main-brand-color hover:text-white">Book ridetur</a>
                     <a href="#" class="float-none px-4 py-3 no-underline block text-left text-black bg-white hover:bg-main-brand-color hover:text-white">Tag din hest med på ferie</a>
                 </div>

@@ -3,6 +3,7 @@
         <h1 class="col-span-12 mt-32">Velkommen til</h1>
         <h1 class="col-span-12 text-secondary-brand-color">Gl. Klitgaard Camping & Hytteby</h1>
     </section>
+    <img src="<?php echo get_theme_file_uri("/assets/images/sol.png") ?>" alt="" class="col-span-1 absolute top-2/4 z-20">
     <section class="fp-welcome col-span-12 grid grid-cols-12 text-center z-10 pb-16 -mt-5">
         <p class="col-start-4 col-span-6 text-lg mt-12">
             Gl. Klitgaard Camping er en smukt beliggende campingplads ved det dejlige Vesterhav med en skøn strand, perfekt til aktiviteter. Stemningen er afslappet og imødekommende, hvor der er plads til alle. Om du bare vil ud i naturen, ride heste, bare vil deltage i vores aktiviteter eller besøge vores Mini-Zoo.

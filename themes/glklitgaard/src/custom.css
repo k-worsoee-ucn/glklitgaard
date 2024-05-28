@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .dropdown:hover .dropdown.content {
     @apply block;
 }
@@ -225,10 +229,53 @@ h3{font-size: 1.25rem;}
 .horse-container {
     background-image: url("../assets/svg/horserip.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
+
+.horse-sect {
+    background-color: #F4F4F4;
+}
+
+.horse-sect > .horse-container:not(:first-child) {
+    margin-top: -22%;
+}
+
 
 .horse-img {
     mask-image: url(../assets/svg/horseimgrip.svg);
     mask-mode: alpha;
+}
+
+.horse-left {
+    @apply col-start-2 row-span-2 row-start-1;
+    grid-row: span 2;
+    grid-column-start: 2;
+    margin: 0 12.5% 0 7.5%;
+}
+
+.horse-right {
+    @apply col-start-6 row-span-2 row-start-2;
+    grid-row: span 2;
+    grid-column-start: 6;
+    margin: 0 7.5% 0 12.5%;
+}
+
+.horse-intro {
+    background-image: url("../assets/images/horse-intro-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.horseshoetrail {
+    grid-column: 1/span 1;
+    grid-row: 1/span 3;
+    z-index: 2;
+    position: absolute;
+    margin: -15% 0 0 -5%;
+}
+
+.bottom-cta {
+    background-image: url("../assets/images/contactcta.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
