@@ -285,3 +285,17 @@ h3{font-size: 1.25rem;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bookhorse-hero {
+    background-image: url("../assets/images/bookridetur.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+}
+
+.how-to-book-horse {
+    background-image: url("../assets/svg/bookhorsebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
