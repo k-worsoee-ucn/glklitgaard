@@ -279,3 +279,9 @@ h3{font-size: 1.25rem;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.reviewContainer {
+    background-image: url("../assets/svg/reviewbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
