@@ -52,7 +52,6 @@ window.addEventListener("load", ()=>{
     const NavPoints = document.querySelectorAll(".nav-point"); //find alle nav pointsne
     NavPoints.forEach((NavP) => { // for hver der er
         const Arrow = NavP.querySelector(".nav-main-point").querySelector(".nav_arrow"); //const dens pil og underside div
-        console.log(Arrow)
         const undersites = NavP.querySelector(".underPoint");
 
         if(Arrow != null && undersites != null){

@@ -1,13 +1,13 @@
 .dropdown:hover .dropdown.content {
-    @apply block;
+    @apply: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-h1{@apply text-4xl;}
-h2{@apply text-2xl;}
+h1{@apply: text-4xl;}
+h2{@apply: text-2xl;}
 h3{@apply: text-xl;}
 h4{@apply: text-l;}
 
@@ -256,4 +256,42 @@ section{height: fit-content; grid-column: 1/ span 12;}
 .SocialM > i{
     font-size: 2rem;
     color: #6B8C23;
+}
+
+
+.slideshow-img > img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 250ms ease-in-out;
+}
+.slideshow-img > img:first-of-type{
+    left: 0;
+}
+.SlideControls > button{
+    background-color: #B6D936;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition: ease-in-out 250ms;
+    transform: scale(1.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.155);
+}
+
+.SlideControls > button:hover{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.155);
+    transform: scale(1.2);
+}
+
+.SlideControls > .ActivelyOnIMG{
+    background-color: #6B8C23;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.155) inset;
+    transform: scale(0.8);
+}
+.left > svg{
+    transform: scaleX(-1);
 }

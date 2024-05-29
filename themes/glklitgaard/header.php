@@ -10,14 +10,14 @@
     <header class="grid grid-cols-12 grid-rows-1 z-50 fixed h-fit drop-shadow-md w-full max-h-16 top-0">
         <div class="opacity-90 col-span-12 col-start-1 row-start-1 row-span-1 h-full bg-gradient-to-r from-brand-lightgreen to-brand-darkgreen -z-10"></div>
         <div class="col-start-1 col-span-4 md:col-span-3 md:col-start-1 lg:col-span-2 lg:col-start-1 row-start-1 relative">
-            <a href="<?php echo site_url() ?>" class="header-logo mx-auto w-fit h-fit">
+            <a href="<?php echo site_url() ?>" class="header-logo mx-auto w-fit h-fit mt-3">
                 <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Gl. Klitgaard logo" class="logo z-10 w-9/12 h-auto max-h-20 align-center row-span-1 row-start-1 col-start-1 col-span-1 object-contain">
             </a>
             <div class="logo-paper absolute w-full h-full top-0 -left-5 -z-10">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/logo-paper.svg"));?>
             </div>
         </div>
-        <nav class="pt-20 lg:pt-0 h-fit bg-brand-lightgreen lg:bg-transparent duration-300 ease-in-out row-span-1 row-start-1 -z-30 lg:z-0 w-full inline-flex flex-wrap justify-center col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 lg:static absolute top-0 -right-full lg:right-0">
+        <nav class="lg:my-auto pt-20 lg:pt-0 h-fit bg-brand-lightgreen lg:bg-transparent duration-300 ease-in-out row-span-1 row-start-1 -z-30 lg:z-0 w-full inline-flex flex-wrap justify-center col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 lg:static absolute top-0 -right-full lg:right-0">
             <?php   $Praktik = new WP_Query(array(
                         "posts_per_page" => 1, // finder alle posts
                         "post_type" => "Page", // Finder posts med den type post type
