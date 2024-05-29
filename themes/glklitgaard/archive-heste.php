@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<div class="horse-hero col-span-12">
-    <h1>Velkommen til</h1>
-    <h1>Vores heste</h1>
+<div class="horse-hero col-span-12 text-center">
+    <h1 class="mt-40 text-6xl">Velkommen til</h1>
+    <h1 class="mt-10 text-6xl text-secondary-brand-color">Vores heste</h1>
 </div>
 <img src="<?php echo get_theme_file_uri("/assets/images/sol.png") ?>" alt="" class="col-span-1 absolute top-2/4">
 <div class="col-span-12 grid grid-cols-12 horse-intro -mt-5">

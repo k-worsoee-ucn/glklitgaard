@@ -57,6 +57,28 @@
         <div class="forecastContainer grid gap-10 mx-40 mt-10"></div>
         <div class="mt-20">
             <h2 class="text-center text-4xl font-normal">Kommende aktiviteter</h2>
+            <div class="grid grid-cols-3 gap-10 mx-80">
+            <?php 
+                $aktiviteter = new WP_Query(array(
+                    'post_per_page' => 9,
+                    'post_type' => 'Aktiviteter',
+
+                ));
+
+                while($aktiviteter->have_posts()) {
+                    $aktiviteter->the_post();
+                    ?>
+                    <div class="bg-white pt-5 px-5 pb-10 shadow-lg">
+                        <img src="<?php echo the_post_thumbnail_url()?>" alt="" class="aspect-square object-cover">
+                        <h2 class="mt-5"><?php echo the_title() ?></h2>
+                        <p><?php echo the_field("date") ?> - <?php echo the_field("time_from")?></p>
+                        <p>Pris: <?php echo the_field("price") ?></p>
+                        <a class="mx-24" href=""><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
+                    </div>
+                    <?php
+                }
+            ?>
+            </div>
         </div>
     </section>
 <?php get_footer() ?>
