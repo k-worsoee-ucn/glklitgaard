@@ -6,7 +6,9 @@ const AdminBar = document.querySelector("#wpadminbar");
 window.addEventListener("load", ()=>{
     WPAdminBar();
     //Tailvind stadig ny til mig (victoria) så benytter js for at give padding nok til første sektion så det kan læses
-    document.querySelectorAll("section")[0].style.paddingTop = Header.querySelector("nav").clientHeight+50+"px"
+    if(AdminBar != null && AdminBar != NaN && AdminBar != ""){
+        document.querySelectorAll("section")[0].style.paddingTop = Header.querySelector("nav").clientHeight+50+"px"
+    }
 })
 window.addEventListener("resize",()=>{
     WPAdminBar();
@@ -14,12 +16,12 @@ window.addEventListener("resize",()=>{
 
 function WPAdminBar(){
     // Hvis admin baren findes eller hvis den ikke er ingen ting
-    if(AdminBar != null){
+    if(AdminBar != null && AdminBar != NaN && AdminBar != ""){
         // brede af siden, da WP admin ændre størrelse
         if(window.innerWidth >= 783){
-            Header.style.marginTop = 32+"px";
+            Header.style.top = 32+"px";
         } else{
-            Header.style.marginTop = 46+"px";
+            Header.style.top = 46+"px";
         }
     }
 }

@@ -3,16 +3,23 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Kalam;
+    font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+h1{@apply text-4xl;}
+h2{@apply text-2xl;}
+h3{@apply: text-xl;}
+h4{@apply: text-l;}
 
-p {
-    font-family: Open Sans;
-}
+p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
 
 .logo {
     margin: auto 12.5%;
+}
+.logo-paper > svg{
+    width:120%;
+    top: 0;
+    left: -20%;
 }
 
 html {
@@ -20,7 +27,7 @@ html {
 }
 
 button {
-    @apply hover:shadow-lg;
+    @apply hover:shadow-lg scale-50;
 }
 
 .footer-paper {
@@ -114,17 +121,19 @@ button {
 
 section{height: fit-content; grid-column: 1/ span 12;}
 
-h1,h2,h3,h4,h5{
-    font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
+.Active{
+    /*@apply scale-110 text-slate-950;*/
+    transform: scale(1.1);
+    color: black;
 }
-p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
-
-h1{font-size: 2rem;}
-h2{font-size: 1.5rem;}
-h3{font-size: 1.25rem;}
 
 .wavey-section{
     z-index: 4;
+}
+#Book-sol{transition: 350ms ease-in-out;}
+#Sun-figure{
+    transition: 500ms linear;
+    rotate: 0deg;
 }
 
 .knap{

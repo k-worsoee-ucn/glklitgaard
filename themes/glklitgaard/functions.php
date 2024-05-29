@@ -14,6 +14,7 @@ function theme_enqueue_styles() {
     wp_enqueue_script("HeadernAdminBar", get_theme_file_uri("/src/js/move-header.js"), array(),'1.0', array('strategy'  => 'defer',));
     wp_enqueue_script("MovingWaves", get_theme_file_uri("/src/js/move-wave.js"), array(),'1.0', array('strategy'  => 'defer',));
     wp_enqueue_script('weatherapp', get_template_directory_uri() . '/src/js/weatherapp.js', array(), '1.0.0', 'all');
+    wp_enqueue_script('HeaderFunctions', get_template_directory_uri() . '/src/js/header-functions.js', array(), '1.0.0', 'all');
 }
 // Disse "Add_action" siger bare hvilken funktion der skal køres og hvornår
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
@@ -22,7 +23,10 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 // Laver menuer muligt i WP-admin siden, bruger til navigationsbaren
 function register_menu(){
     register_nav_menus( array(
-        'main_menu' => 'Main Menu',
+        'praktisk_menu' => 'Praktisk Information undersider',
+        'heste_menu' => 'Islandske Heste undersider',
+        'oplevelse_menu' => 'Oplevelser undersider',
+        'pris_menu' => 'Priser undersider',
         'footer_menu' => 'Footer Menu',
     ) );
 };
