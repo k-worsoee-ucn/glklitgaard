@@ -8,7 +8,6 @@ function theme_enqueue_styles() {
     // Tilføjer CSS filer til siden
     wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/src/output.css', array(), '1.0.0', 'all');
     wp_enqueue_style('custom', get_template_directory_uri() . '/src/custom.css', array(), '1.0.0', 'all');
-    wp_enqueue_style('custom-archive-single', get_template_directory_uri() . '/src/custom-archive-single.css', array(), '1.0.0', 'all');
 
     // Tilføjer JavaScript Filer til siden
     wp_enqueue_script("HeadernAdminBar", get_theme_file_uri("/src/js/move-header.js"), array(),'1.0', array('strategy'  => 'defer',));
@@ -16,8 +15,16 @@ function theme_enqueue_styles() {
     wp_enqueue_script('HeaderFunctions', get_template_directory_uri() . '/src/js/header-functions.js', array(), '1.0.0', 'all');
     wp_enqueue_script('slideShow', get_template_directory_uri() . '/src/js/slide-shows.js', array(), '1.0.0', 'all');
 
-    if(is_front_page()){ // gør at javascriptet kun køre på forsiden
+    if(is_front_page()){ // gør at javascriptet kun køre på forsiden.
+        // hvordan det virker er at den ser, er det forsiden, hvis ja give den et true, hvis ikke, giver den en false
         wp_enqueue_script('weatherapp', get_template_directory_uri() . '/src/js/weatherapp.js', array(), '1.0.0', 'all');
+    }
+    if(is_single()){
+        wp_enqueue_script('SingleImg', get_template_directory_uri() . '/src/js/single-slideshow-see.js', array(), '1.0.0', 'all');
+    }
+
+    if(is_single() OR is_archive()){ // eller :)
+        wp_enqueue_style('custom-archive-single', get_template_directory_uri() . '/src/custom-archive-single.css', array(), '1.0.0', 'all');
     }
 }
 // Disse "Add_action" siger bare hvilken funktion der skal køres og hvornår

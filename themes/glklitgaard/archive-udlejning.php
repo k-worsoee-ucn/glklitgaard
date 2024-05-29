@@ -342,7 +342,7 @@ $AndetMæng = 1;?>
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
             <div class="absolute h-full left-5 bottom-8 z-30">
-                <svg class="opacity-50 box-content h-16 w-16" preserveAspectRatio="none" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="fade2 opacity-50 box-content h-16 w-16" preserveAspectRatio="none" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M59.9996 0V2C59.9996 2 33 2 17.5 14.5C2 27 2 56 2 56H0C0 56 -0.000392914 26 15.9996 13C31.9996 0 59.9996 0 59.9996 0Z" class="fill-orange-800 stroke-2 stroke-orange-800"/>
                 </svg>
                 <svg class="fade w-1 h-full opacity-50" preserveAspectRatio="none" width="10" height="60" viewBox="0 0 10 60" fill="none" xmlns="http://www.w3.org/2000/svg">

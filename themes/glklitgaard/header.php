@@ -178,7 +178,7 @@
                         <?php };}; ?>
             </div> <?php }; wp_reset_postdata();?>
             <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));//ligende med tidligere ting, men vi henter linket fra en seperat fil og sætter ind som href'en.?>"
-            class="knap md:hidden text-center px-3 py-1 mx-auto my-5 font-semibold">Book nu</a>
+            class="knap z-20 md:hidden text-center px-3 py-1 mx-auto my-5 font-semibold">Book nu</a>
         </nav>
         <div id="Burg-Menu" class="col-start-8 col-span-4 md:col-start-4 md:col-span-7 md:row-start-1 lg:hidden text-slate-950 md:text-brand-darkgreen duration-300 hover:scale-110 hover:text-slate-900 drop-shadow-sm w-fit h-fit my-auto mr-8 ml-auto row-start-1 md:m-auto"><i class="fa-solid fa-bars text-3xl cursor-pointer"></i></div>
         <div class="col-start-11 col-span-2 w-full my-auto relative row-start-1">
