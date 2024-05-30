@@ -3,20 +3,27 @@
 @tailwind utilities;
 
 .dropdown:hover .dropdown.content {
-    @apply block;
+    @apply: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Kalam;
+    font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+h1{@apply: text-4xl;}
+h2{@apply: text-2xl;}
+h3{@apply: text-xl;}
+h4{@apply: text-l;}
 
-p {
-    font-family: Open Sans;
-}
+p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
 
 .logo {
     margin: auto 12.5%;
+}
+.logo-paper > svg{
+    width:120%;
+    top: 0;
+    left: -20%;
 }
 
 html {
@@ -24,7 +31,7 @@ html {
 }
 
 button {
-    @apply hover:shadow-lg;
+    @apply hover:shadow-lg scale-50;
 }
 
 .footer-paper {
@@ -32,21 +39,51 @@ button {
 }
 
 .footer-logo-container {
-    background-image: url("../assets/svg/footer-paper.svg");
-    padding:  25px 10px;
-    height: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 25% 12.5% 15%;
+    position: relative;
+    padding:  3rem 2rem;
+    height: fit-content;
+}
+.footer-logo-container > svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
-.footer-contact {
-    margin-top: 35%;
+.footer-nav > ul > li > div{
+    background-color: #fef9c3;
+    border-radius: 0.25rem;
+    width: 0;
+    z-index: 1;
+    transition: 250ms ease-in-out;
 }
 
-.footer-nav {
-    margin-top: 50%;
+.footer-nav > ul > li:hover > div{
+    width: 100%;
+    background-color: #B6D936;
+}
+.footer-nav > ul > li > a{transition: 250ms ease-in-out;}
+.footer-nav > ul > li:hover > a{
+    width: 100%;
+    color: #fef9c3;
+    transform: scale(1.05);
+}
+.SocialM > i {
+    transition: 250ms ease-in-out;
+    --tw-drop-shadow: drop-shadow(0 1px 1px rgba(0,0,0,0.05));}
+.SocialM:hover > i{
+    transform: scale(1.1);
+    color: #B6D936;
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
+}
+.hover-effect-foot, .hover-effect-foot > a, .hover-effect-foot > i{
+    transition: 250ms;
+}
+.hover-effect-foot:hover{
+    transform: scale(1.1);
+    color: #fef9c3;
 }
 
 .fp-welcome {
@@ -88,30 +125,31 @@ button {
 
 section{height: fit-content; grid-column: 1/ span 12;}
 
-h1,h2,h3,h4,h5{
-    font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
+.Active{
+    /*@apply scale-110 text-slate-950;*/
+    transform: scale(1.1);
+    color: black;
 }
-p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
-
-h1{font-size: 2rem;}
-h2{font-size: 1.5rem;}
-h3{font-size: 1.25rem;}
 
 .wavey-section{
     z-index: 4;
 }
+#Book-sol{transition: 350ms ease-in-out;}
+#Sun-figure{
+    transition: 500ms linear;
+    rotate: 0deg;
+}
 
 .knap{
-    margin: auto auto 10px auto;
     border-radius: 25px;
     font-weight: 600;
-    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    background-color: #6BD9F2;
     transition: ease-in-out 250ms;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.255);
 }
 .knap:hover{
     font-weight: 600;
-    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+    background-color: #90e9fd;
     filter: brightness(1.1);
     transform: scale(1.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.255);
@@ -140,13 +178,13 @@ h3{font-size: 1.25rem;}
     z-index: 3;
     top: -10px;
     position: absolute;
-    opacity: 0.75;
+    opacity: 1;
 }
 #Foot-Rip > svg:first-of-type{
     fill: rgb(254 249 195 / var(--tw-bg-opacity));
     z-index: 2;
     top: -20px;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 #Foot-Rip > svg:last-of-type{
     fill: #6B8C23;
@@ -219,6 +257,48 @@ h3{font-size: 1.25rem;}
     padding: 10% 0;
 }
 
+.SocialM > i{
+    font-size: 2rem;
+    color: #6B8C23;
+}
+
+
+.slideshow-img > img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 250ms ease-in-out;
+}
+.slideshow-img > img:first-of-type{
+    left: 0;
+}
+.SlideControls > button{
+    background-color: #B6D936;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition: ease-in-out 250ms;
+    transform: scale(1.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.155);
+}
+
+.SlideControls > button:hover{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.155);
+    transform: scale(1.2);
+}
+
+.SlideControls > .ActivelyOnIMG{
+    background-color: #6B8C23;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.155) inset;
+    transform: scale(0.8);
+}
+.left > svg{
+    transform: scaleX(-1);
+}
 .rating-sect {
     background-image: url("../assets/svg/ratingbg.svg");
     background-repeat: no-repeat;

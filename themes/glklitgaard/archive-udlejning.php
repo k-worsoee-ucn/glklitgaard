@@ -1,7 +1,6 @@
 
 <?php get_header();
 // ^ Henter header.php
-$Slideshow = 1;
 // ^ vil gerne have en varriabel for at give ID til hver slideshow. til JavaScripting for sider med mere end 1 slideshow.
     $Hytte = new WP_Query(array(
         'posts_per_page'    => -1,
@@ -64,8 +63,8 @@ $Slideshow = 1;
                 </div>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();//giv a-tag (knappen) linket til posten?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));//ligende med tidligere ting, men vi henter linket fra en seperat fil og sætter ind som href'en.?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();//giv a-tag (knappen) linket til posten?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));//ligende med tidligere ting, men vi henter linket fra en seperat fil og sætter ind som href'en.?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
@@ -109,8 +108,8 @@ $Slideshow = 1;
                 </div>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-1 z-10">
@@ -149,8 +148,8 @@ $Slideshow = 1;
                         </div>
                     </div>
                     <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                        <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                        <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                        <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                        <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
                     </div>
         
                     <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-1 z-10">
@@ -219,8 +218,8 @@ if($AmountA){
                 </div>
             </div>
             <div class="md:col-span-2 lg:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="tape tape-left">
@@ -257,8 +256,8 @@ if($AmountA){
                 </div>
             </div>
             <div class="md:col-span-2 lg:col-span-2 w-8/12 mx-auto inline-flex justify-between">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
 
             <div class="tape tape-left">
@@ -288,14 +287,35 @@ $AndetMæng = 1;?>
     </div>
     <div class="w-11/12 md:w-10/12 lg:w-9/12 mx-auto my-36 grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
     <?php while($Klit->have_posts()){
-        $Klit->the_post();?>
-        <div id="Slideshow<?php echo $Slideshow;?>" class="min-h-96 md:min-h-80 slideshow shadow-lg bg-slate-100 p-7 lg:w-full md:5 lg:3 w-full md:w-5/6 md:mx-auto h-full z-10">
-            <div class="SlideControls shadow-inner h-full w-full"></div>
-            <div id="Slide-img"></div>
+        $Klit->the_post();
+        // kopir helle næste div for at lave automatisk slideshow. du kan ændre styling men ikke fjerne særklasserne!?>
+        <div class="min-h-96 md:min-h-80 slideshow shadow-lg relative bg-slate-100 p-7 lg:w-full md:5 lg:3 w-full md:w-5/6 md:mx-auto h-full z-10">
+            <div class="slideshow-img relative h-full w-full overflow-hidden"><?php echo get_the_post_thumbnail();
+            $content = strip_tags(get_the_content(), '<img>'); // fjerner alle tags, undtaget img
+            $pattern = "/<img.*?src[^\>]+>/"; // REGEX til at finde billede
+            if(preg_match($pattern, $content)){ // tester om contenten har img'ed
+                $content = str_replace("<","<!--Cut here--> <",$content); //finder, erstatter, hvilken string
+                $content = str_replace(">","> <!--Cut here-->",$content); //erstatter
+                $parts = explode("<!--Cut here-->",$content); //skær hver gang den finder <!-- cut here -->, laver en array
+                $i = 1; // bare til at idexsere så vi ikke har så mange img på denne side :)
+                foreach($parts as $p){ // for hver del af array'et
+                    if(preg_match($pattern, $p) && $i < 4){ // hvis den har billede
+                        echo $p; //print billede ud
+                        $i++; // increase.
+                    };
+                };?>
+                </div>
+                <button type="button" class="right bottom-1/2 -right-5 hover:drop-shadow-md translate-y-1/2 absolute h-10 w-10 z-20 hover:fill-brand-darkgreen"><?php echo file_get_contents(get_theme_file_uri("/assets/svg/arrow.svg"));?></button>
+                <button type="button" class="left bottom-1/2 -left-16 hover:drop-shadow-md translate-y-1/2 absolute h-10 w-10 z-20 hover:fill-brand-darkgreen translate-x-full"><?php echo file_get_contents(get_theme_file_uri("/assets/svg/arrow.svg"));?></button>
+                <div class="SlideControls shadow-inner h-fit w-full absolute bottom-3 left-0 z-10 inline-flex gap-5 justify-center"></div>
+            <?php };
+            ;?>
         </div>
         <div class="drop-shadow-md relative px-5 lg:col-start-2 lg:col-span-2 w-10/12 md:w-9/12 mx-auto lg:w-full bg-yellow-100 lg:pl-5 lg:pr-5 lg:-ml-5 lg:my-10 py-1.5 grid grid-cols-1">
             <h1 class="text-center">Klithuset</h1>
-            <div class="h-1 w-full pl-5 -ml-5 bg-orange-800 opacity-50 box-content pr-5"></div>
+            <div class="h-1 w-full pl-5 -ml-5 bg-orange-800 opacity-50 box-content pr-5">
+                <?php ?>
+            </div>
             <p class="py-5 max-w-96 mx-auto"><?php if(has_excerpt()){echo get_the_excerpt();}else{wp_trim_words(get_the_content(), 100, "..." );};?></p>
             <div class="w-11/12 md:10/12 lg:w-8/12 mx-auto inline-flex justify-between">
                 <div class="grid grid-cols-1">
@@ -315,14 +335,14 @@ $AndetMæng = 1;?>
                 </div>
             </div>
             <div class="w-11/12 md:10/12 lg:w-8/12 mx-auto inline-flex justify-between mt-5">
-                <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
-                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
+                <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+                <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
             <div class="h-fit w-full paper-rip absolute left-0 top-full">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
             <div class="absolute h-full left-5 bottom-8 z-30">
-                <svg class="opacity-50 box-content h-16 w-16" preserveAspectRatio="none" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="fade2 opacity-50 box-content h-16 w-16" preserveAspectRatio="none" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M59.9996 0V2C59.9996 2 33 2 17.5 14.5C2 27 2 56 2 56H0C0 56 -0.000392914 26 15.9996 13C31.9996 0 59.9996 0 59.9996 0Z" class="fill-orange-800 stroke-2 stroke-orange-800"/>
                 </svg>
                 <svg class="fade w-1 h-full opacity-50" preserveAspectRatio="none" width="10" height="60" viewBox="0 0 10 60" fill="none" xmlns="http://www.w3.org/2000/svg">

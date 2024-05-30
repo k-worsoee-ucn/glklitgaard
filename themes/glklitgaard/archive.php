@@ -20,7 +20,7 @@
         <div class="grid grid-cols-1">
             <h3 class="text-center"><?php the_title(); ?></h3>
             <?php wp_trim_words(the_excerpt(), 100, "...")?>
-            <a href="<?php echo post_permalink();?>" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
+            <a href="<?php echo post_permalink();?>" class="knap mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere</a>
         </div>
         <div class="tape tape-left">
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/tape.svg")); ?>
