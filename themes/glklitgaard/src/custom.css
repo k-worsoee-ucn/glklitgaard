@@ -219,6 +219,12 @@ h3{font-size: 1.25rem;}
     padding: 10% 0;
 }
 
+.rating-sect {
+    background-image: url("../assets/svg/ratingbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .horse-hero {
     background-image: url("../assets/images/hest-hero.png");
     background-repeat: no-repeat;

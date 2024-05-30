@@ -5,7 +5,7 @@
 <img src="<?php echo get_theme_file_uri("/assets/images/sol.png") ?>" alt="" class="col-span-1 absolute top-2/4">
 <div class="col-span-12 grid grid-cols-12 horse-intro -mt-5">
     <div class="col-start-4 col-span-6 text-center text-lg py-20 mt-10">
-        <p>På Gl. Klitgaard camping er vi meget glade for den islandskhest. Vi har en lille flok på omkring 25 heste. som går fordelt på flere af vores mange store folde. Om sommeren kommer nogle ud i klitterne, helt ud til vandet, da det er her de har det bedst om sommeren.</p>
+        <p>På Gl. Klitgaard camping er vi meget glade for den islandskhest. Vi har en lille flok på omkring 30 heste. som går fordelt på flere af vores mange store folde. Om sommeren kommer nogle ud i klitterne, helt ud til vandet, da det er her de har det bedst om sommeren.</p>
         <p>De fleste af hestene er det muligt at prøve en tur på, hvis du finder en som du synes er særlig sød, kom og prøv ham eller hende i din ferie hos os. De elsker at komme ud i naturen.</p>
     </div>
 </div>

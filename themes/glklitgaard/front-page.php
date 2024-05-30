@@ -20,7 +20,7 @@
                 <h3 class="text-4xl col-span-4">Kr. Himmelfarts Tilbud</h3>
                 <p class="col-span-4 text-lg">Vi vil gerne give muligheden for jer og jeres nærmeste til at nyde de dejlige nye sommer dage og helligdage sammen i den dejlige natur, i nærheden af det kølige Vesterhav for at have mulighed for at køle ned.</p>
                 <p class="col-span-4 text-lg">Alle tilbuddene er gældende fra d. 8. maj til d. 12. maj 2024. </p>
-                <a href="#" class="col-start-2 col-span-2 w-9/12"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere</button></a>
+                <a href="#" class="col-start-2 col-span-2 knap"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere</button></a>
             </div>
         </div>
         <div class="col-span-10 grid grid-cols-10 pt-28">
@@ -29,7 +29,7 @@
                 <h3 class="text-4xl col-span-4">Kr. Himmelfarts Tilbud</h3>
                 <p class="col-span-4 text-lg">Vi vil gerne give muligheden for jer og jeres nærmeste til at nyde de dejlige nye sommer dage og helligdage sammen i den dejlige natur, i nærheden af det kølige Vesterhav for at have mulighed for at køle ned.</p>
                 <p class="col-span-4 text-lg">Alle tilbuddene er gældende fra d. 8. maj til d. 12. maj 2024. </p>
-                <a href="#" class="col-start-2 col-span-2 w-9/12"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere</button></a>
+                <a href="#" class="col-start-2 col-span-2 knap"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere</button></a>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
             </p>
         </div>
         <div class="row-start-3 mt-10">
-            <a href=""><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere om os</button></a>
+            <a class="knap" href=""><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere om os</button></a>
         </div>
         <h3 class="row-start-4 mx-auto font-bold">Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
@@ -89,7 +89,7 @@
                     <h2 class="mt-5"><?php echo the_title() ?></h2>
                     <p><?php echo the_field("date") ?> - <?php echo the_field("time_from") ?></p>
                     <p>Pris: <?php echo the_field("price") ?></p>
-                    <a class="mx-24" href=""><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
+                    <a class="mx-24 knap" href=""><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
                 </div>
             <?php
             }
@@ -103,30 +103,82 @@
         </div>
         <div class="text-center grid grid-cols-12 mt-10">
             <p class="text-lg col-start-5 col-span-4 row-start-1 mx-20">Vi har altid noget i gang hos Gl. Klitgaard, hesteridning, dyre fodring, med mere.</p>
-            <a class="col-start-6 col-span-2 row-start-2" href=""><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Se alle vores aktiviteter</button></a>
+            <a class="col-start-6 col-span-2 row-start-2 knap" href=""><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Se alle vores aktiviteter</button></a>
         </div>
-        <div class="grid grid-cols-12">
-            <h2 class="text-center text-5xl font-normal col-span-12">Hvad synes andre?</h2>
-            <img src="<?php echo get_theme_file_uri("/assets/logos/TripAdvisor_Logo.png") ?>" alt="" class="col-start-3 col-span-3 h-full row-start-2 row-span-1 mx-auto">
-            <div class="grid grid-cols-5 col-start-3 col-span-3 mx-auto w-2/5">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_empty.svg") ?>" alt="">
-            </div>
-            <img src="<?php echo get_theme_file_uri("/assets/logos/Google_2015_logo.png") ?>" alt="" class="col-start-8 col-span-3 h-full row-start-2 row-span-1 mx-auto">
-            <div class="grid grid-cols-5 col-start-8 col-span-3 mx-auto w-2/5">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
-                <img src="<?php echo get_theme_file_uri("/assets/svg/star_empty.svg") ?>" alt="">
-            </div>
-            <div class="reviews col-span-12 grid grid-cols-5 gap-24 mx-24 mt-20"></div>
-        </div>
-        <p class="theme_url hidden"><?php echo get_theme_file_uri() ?></p>
     </div>
+</section>
+<section class="rating-sect -mt-10 z-20">
+    <div class="grid grid-cols-2 gap-10 mt-32">
+        <div class="drop-shadow bg-yellow-100 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:col-start-1 col-span-1 col gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
+            <a class="simple-pic-drop min-h-60 relative -top-5 -left-5 h-2/3 w-auto max-h-20 z-10" href="#">
+                <div class="absolute w-fit left-1/2 right-1/2 -top-5 -translate-x-1/2 z-20">
+                    <?php echo file_get_contents(get_theme_file_uri("/assets/svg/tac.svg")); //henter og indsætter inholdet fra theme mappen/assets/svg/tac 
+                    ?>
+                </div>
+                <img class="drop-shadow-sm h-full min-h-60 md:min-h-52 lg:min-h-40 w-full object-cover" src="<?php echo get_theme_file_uri("/assets/images/seværdigheder.png"); ?>" alt="">
+            </a>
+            <div class="col-start-1 md:col-span-2 lg:col-span-2 h-10 lg:h-6 absolute bg-yellow-800 opacity-20 row-start-1 row-span-1 w-full"></div>
+            <div class="mt-40 md:mt-10 lg:mt-7 w-10/12 mx-auto md:mx-0 lg:mx-0 md:min-h-40 lg:min-h-32">
+                <h3 class="text-center h-fit">Seværdigheder</h3>
+                <p>Gl. Klitgaard Camping ligger i nærheden af løkken og tæt ved norden, så der er mulighed for mange forskellige oplevelser i nær området. Må det være Fårup sommerland, Nordsøen Oceanarium eller bare at nyde vestkysten.</p>
+            </div>
+            <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto mr-0 inline-flex">
+                <a href="#" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Se nærliggende seværdigheder</a>
+            </div>
+
+            <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
+                <div class="bg-yellow-100 h-10 w-full -mr-0.5 pr-0.5"></div>
+                <svg class="h-10 w-10 -rotate-90" width="59" height="57" viewBox="0 0 59 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M58.5 0.819336L58.5 56.5L0.0952523 0.819356L58.5 0.819336Z" class="fill-yellow-200" />
+                </svg>
+            </div>
+        </div>
+        <div class="drop-shadow bg-yellow-100 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:col-start-2 col-span-1 col gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
+            <a class="simple-pic-drop min-h-60 relative -top-5 -left-5 h-2/3 w-auto max-h-20 z-10" href="#">
+                <div class="absolute w-fit left-1/2 right-1/2 -top-5 -translate-x-1/2 z-20">
+                    <?php echo file_get_contents(get_theme_file_uri("/assets/svg/tac.svg")); //henter og indsætter inholdet fra theme mappen/assets/svg/tac 
+                    ?>
+                </div>
+                <img class="drop-shadow-sm h-full min-h-60 md:min-h-52 lg:min-h-40 w-full object-cover" src="<?php echo get_theme_file_uri("/assets/images/faciliteter.png");?>" alt="">
+            </a>
+            <div class="col-start-1 md:col-span-2 lg:col-span-2 h-10 lg:h-6 absolute bg-yellow-800 opacity-20 row-start-1 row-span-1 w-full"></div>
+            <div class="mt-40 md:mt-10 lg:mt-7 w-10/12 mx-auto md:mx-0 lg:mx-0 md:min-h-40 lg:min-h-32">
+                <h3 class="text-center h-fit">Faciliteter</h3>
+                <p>Og hvis du ikke vil længere væk end bare campingpladsen, har vi masser at man kan tage sig til. om det skal være ridning af heste, at besøge vores minizoo eller nyde at være i sin egen hytte med familien.</p>
+            </div>
+            <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto mr-0 inline-flex">
+                <a href="#" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Se vores faciliteter</a>
+            </div>
+
+            <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
+                <div class="bg-yellow-100 h-10 w-full -mr-0.5 pr-0.5"></div>
+                <svg class="h-10 w-10 -rotate-90" width="59" height="57" viewBox="0 0 59 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M58.5 0.819336L58.5 56.5L0.0952523 0.819356L58.5 0.819336Z" class="fill-yellow-200" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-12 py-20 mt-10">
+        <h2 class="text-center text-5xl font-normal col-span-12">Hvad synes andre?</h2>
+        <img src="<?php echo get_theme_file_uri("/assets/logos/TripAdvisor_Logo.png") ?>" alt="" class="col-start-3 col-span-3 h-full row-start-2 row-span-1 mx-auto">
+        <div class="grid grid-cols-5 col-start-3 col-span-3 mx-auto w-2/5">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_empty.svg") ?>" alt="">
+        </div>
+        <img src="<?php echo get_theme_file_uri("/assets/logos/Google_2015_logo.png") ?>" alt="" class="col-start-8 col-span-3 h-full row-start-2 row-span-1 mx-auto">
+        <div class="grid grid-cols-5 col-start-8 col-span-3 mx-auto w-2/5">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_filled.svg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri("/assets/svg/star_empty.svg") ?>" alt="">
+        </div>
+        <div class="reviews col-span-12 grid grid-cols-5 gap-24 mx-24 mt-20"></div>
+    </div>
+    <p class="theme_url hidden"><?php echo get_theme_file_uri() ?></p>
 </section>
 <div class="bottom-cta col-span-12 py-32 -mt-8 z-20 grid grid-cols-12">
     <div class="col-start-1 col-span-7 grid grid-cols-11">
@@ -139,12 +191,12 @@
         <div class="pt-6 px-6 pb-10 bg-white w-10/12 row-start-1 row-span-1 col-start-8 col-span-4 shadow-lg -ml20 z-10">
             <img src="<?php echo get_theme_file_uri("/assets/images/ctaimg3.png") ?>" alt="" class="w-full h-3/5 object-cover">
         </div>
-        
+
     </div>
     <div class="col-start-8 col-span-4 text-center my-auto">
         <h2 class="text-4xl">Vil du vide mere?</h2>
         <p class="text-lg">Har du spørgsmål til vores hest eller ønsker du at booke en ridetur på en af dem, så du velkommen til at kontakte os.</p>
-        <a href="#" class="button"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
+        <a href="#" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
         <h3>Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
 </div>
