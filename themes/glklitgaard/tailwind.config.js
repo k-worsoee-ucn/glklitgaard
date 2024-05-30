@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./*.php", 
-    "./assets/js/*.js", 
-    "./src/**/*.css",
-    "./src/**/*.js"
+    "*.php",
+    "./src/**.css",
+    "./src/js/**.js",
+    "./assets/svg/**.svg"
   ],
   theme: {
     extend: {
@@ -15,8 +15,9 @@ module.exports = {
         "main-interaction-color" : "#6BD9F2",
         "brand-lightgreen" : "#B6D936",
         "brand-darkgreen" : "#6B8C23",
+        "text-secondary-brand-color" : "#F78F1E",
 
-      }
+      },
     },
   },
   plugins: [],

@@ -161,29 +161,6 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-tag"
     ));
-    register_post_type("Priser", array(
-        "has_archive" => true,
-        "show_in_rest" => true,
-        "public" => true,
-        "supports" => array(
-            "editor",
-            "title",
-            "thumbnail",
-            "excerpt"
-        ),
-        "rewrite" => array(
-            "slug" => "priser"
-        ),
-        "labels" => array(
-            "name" => "Priser",
-            "add_new_item" => "Tilføj Priser",
-            "add_new" => "Tilføj Pris",
-            "edit_item" => "Ænder Priser",
-            "all_items" => "Alle Priser",
-            "singular_name" => "Pris",
-        ),
-        "menu_icon" => "dashicons-money-alt"
-    ));
 };
 add_action('init', 'PostTypes');
 ?>

@@ -2,7 +2,7 @@
 <?php get_header();?>
 <section class="bg-gray-200 wavey-section">
 
-<h1 class="text-center"><?php echo post_type_archive_title( '', false );?></h1>
+<h1 class="text-center text-3xl"><?php echo post_type_archive_title( '', false );?></h1>
 </section>
 <div class="h-fit w-full rip bg-white">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
