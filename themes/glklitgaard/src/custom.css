@@ -305,3 +305,32 @@ h3{font-size: 1.25rem;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.paper {
+    background-image: url("../assets/svg/Paper.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paper-rev {
+    background-image: url("../assets/svg/Paper.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+.paper-rev * {
+    transform: scaleX(-1);
+}
+
+.offer-points {
+    list-style: disc;
+}
+
+.offerClause {
+    background-image: url("../assets/svg/offerclause.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

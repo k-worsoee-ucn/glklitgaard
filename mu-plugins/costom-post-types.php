@@ -138,6 +138,29 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-carrot"
     ));
+    register_post_type("Tilbud", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail",
+            "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "tilbud"
+        ),
+        "labels" => array(
+            "name" => "Tilbud",
+            "add_new_item" => "Tilføj Tilbud",
+            "add_new" => "Tilføj Tilbud",
+            "edit_item" => "Ænder Tilbud",
+            "all_items" => "Alle Tilbud",
+            "singular_name" => "Tilbud",
+        ),
+        "menu_icon" => "dashicons-tag"
+    ));
 };
 add_action('init', 'PostTypes');
 ?>
