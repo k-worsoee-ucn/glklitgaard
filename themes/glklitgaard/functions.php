@@ -14,7 +14,9 @@ function theme_enqueue_styles() {
     wp_enqueue_script("MovingWaves", get_theme_file_uri("/src/js/move-wave.js"), array(),'1.0', array('strategy'  => 'defer',));
     wp_enqueue_script('HeaderFunctions', get_template_directory_uri() . '/src/js/header-functions.js', array(), '1.0.0', 'all');
     wp_enqueue_script('slideShow', get_template_directory_uri() . '/src/js/slide-shows.js', array(), '1.0.0', 'all');
-
+    wp_enqueue_script('addhorseshoe', get_template_directory_uri() . '/src/js/addhorseshoe.js', array(), '1.0.0', 'all');
+    wp_enqueue_script('reviews', get_template_directory_uri() . '/src/js/showreviews.js', array(), '1.0.0', 'all');
+    
     if(is_front_page()){ // gør at javascriptet kun køre på forsiden.
         // hvordan det virker er at den ser, er det forsiden, hvis ja give den et true, hvis ikke, giver den en false
         wp_enqueue_script('weatherapp', get_template_directory_uri() . '/src/js/weatherapp.js', array(), '1.0.0', 'all');
@@ -26,6 +28,7 @@ function theme_enqueue_styles() {
     if(is_single() OR is_archive()){ // eller :)
         wp_enqueue_style('custom-archive-single', get_template_directory_uri() . '/src/custom-archive-single.css', array(), '1.0.0', 'all');
     }
+
 }
 // Disse "Add_action" siger bare hvilken funktion der skal køres og hvornår
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
@@ -59,6 +62,7 @@ function features() {
     add_theme_support('post-thumbnails');
     add_image_size("big-thumb", 500, 1000, true);
     add_image_size("small-thumb", 250, 250, true);
+    add_image_size("horse", 300, 350, true); 
 };
 
 add_action('after_setup_theme', 'features');

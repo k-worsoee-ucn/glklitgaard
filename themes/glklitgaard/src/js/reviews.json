@@ -1,0 +1,39 @@
+{
+    "reviews": [
+        {
+            "id": "01",
+            "name": "Mark L",
+            "review_title": "Dejlig campingplads",
+            "review_text": "Dejlig campingplads, med aktiviteter til børn og voksne. Følte os personligt taget godt om.Tydeligt at mærke det personlige engagement fra værtsparet.",
+            "review_score": 5
+        },
+        {
+            "id": "02",
+            "name": "Britta L",
+            "review_title": "Campingferie",
+            "review_text": "Skal I på campingferie i det Jyske, er denne campingplads et besøg værd. Den ligger tæt på mange skønne seværdigheder og ikke mindst det skønne Skagen.",
+            "review_score": 5
+        },
+        {
+            "id": "03",
+            "name": "Vibeke G",
+            "review_title": "Regelmæssig gæst",
+            "review_text": "Det er langt det mest hyggelige camping jeg kender. Min familie og jeg har brugt det i flere år, og det er udrulningsprojekt: vi vil vende tilbage igen!",
+            "review_score": 5
+        },
+        {
+            "id": "04",
+            "name": "Braeraa",
+            "review_title": "God til børnefamilier",
+            "review_text": "Boede i en luksushytte og det fungerede fint. Masser af børneaktiviteter på pladsen, bl.a. mini zoo, fine legepladser og mulighed for rideture.",
+            "review_score": 4
+        },
+        {
+            "id": "05",
+            "name": "Jimmy L",
+            "review_title": "Toppen",
+            "review_text": "Mycket trevlig camping. Fin miljö och trevlig personal. Mysigt för barnen med djur på campingen. Fräscht i servicebyggnaden. Kan verkligen rekommendera denna camping.",
+            "review_score": 5
+        }
+    ]
+}
