@@ -347,3 +347,11 @@ h3{font-size: 1.25rem;}
     text-align: left;
     padding-left: 5%;
 }
+
+.glk-hero {
+    background-image: url("../assets/images/glkhero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}

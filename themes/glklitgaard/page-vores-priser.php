@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<section class="fp-hero col-span-12 text-center text-4xl">
+<section class="glk-hero col-span-12 text-center text-4xl">
     <h1 class="col-span-12 mt-32">Velkommen til</h1>
     <h1 class="col-span-12 text-secondary-brand-color">Gl. Klitgaard Camping & Hytteby</h1>
 </section>
