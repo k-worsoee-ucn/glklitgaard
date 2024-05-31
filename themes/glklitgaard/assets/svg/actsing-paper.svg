@@ -1,0 +1,38 @@
+<svg width="588" height="376" viewBox="0 0 588 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_530_94669)">
+<path d="M736.16 9.96888H10.0857L8.16016 12.0028V98.879H736.16V9.96888Z" fill="url(#paint0_linear_530_94669)"/>
+<g filter="url(#filter1_d_530_94669)">
+<path d="M736.15 26.775C736.65 2.39583 718.65 4.02255 718.65 4.02255H15.1498C15.1498 4.02255 12.0411 4.02255 9.66016 6.17383C7.27924 8.32512 8.16016 18.1181 8.16016 18.1181C8.16016 18.1181 8.16016 12.1373 11.6602 12.1373C15.1602 12.1373 15.1498 18.1181 15.1498 18.1181V364H736.15C736.15 364 735.649 51.1541 736.15 26.775Z" fill="url(#paint1_linear_530_94669)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_530_94669" x="0.200824" y="0.2" width="743.759" height="375.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="3.9"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_530_94669"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_530_94669" result="shape"/>
+</filter>
+<filter id="filter1_d_530_94669" x="8.00082" y="4" width="736.159" height="368" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_530_94669"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_530_94669" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_530_94669" x1="372.16" y1="9.96888" x2="372.16" y2="98.879" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A19C8C"/>
+<stop offset="0.454" stop-color="#E4DFCF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_530_94669" x1="368.63" y1="363.999" x2="368.63" y2="4.02124" gradientUnits="userSpaceOnUse">
+<stop offset="0.955" stop-color="#FEF6DD"/>
+<stop offset="1" stop-color="#D3C7A4"/>
+</linearGradient>
+</defs>
+</svg>

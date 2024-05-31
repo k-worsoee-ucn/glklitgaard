@@ -23,9 +23,10 @@
                         "post_type" => "Page", // Finder posts med den type post type
                          "pagename" => "praktisk info"
                     ));
+                    $location = get_nav_menu_locations();
                     if($Praktik && $Praktik->found_posts != 0){ ?>
             <div class="nav-point relative w-full lg:w-fit h-fit float-left inline-block border-none outline-none lg:m-1 px-3 py-2 my-auto rounded-none hover:rounded-t bg-brand-lightgreen hover:bg-brand-darkgreen hover:text-white lg:bg-transparent text-slate-950 lg:hover:text-slate-950 lg:hover:bg-brand-lightgreen duration-200">
-                <?php   $location = get_nav_menu_locations();
+                <?php   
                         $Mmenu = wp_get_nav_menu_object( $location['praktisk_menu'] );
                         $Mmenuitems = null;
                         if($Mmenu){

@@ -20,7 +20,7 @@
                 <h3 class="text-4xl col-span-4">Kr. Himmelfarts Tilbud</h3>
                 <p class="col-span-4 text-lg">Vi vil gerne give muligheden for jer og jeres nærmeste til at nyde de dejlige nye sommer dage og helligdage sammen i den dejlige natur, i nærheden af det kølige Vesterhav for at have mulighed for at køle ned.</p>
                 <p class="col-span-4 text-lg">Alle tilbuddene er gældende fra d. 8. maj til d. 12. maj 2024. </p>
-                <a href="#" class="col-start-2 col-span-2 knap"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere</button></a>
+                <a href="#" class="col-start-2 col-span-2 knap text-center h-fit py-3">Læs mere</a>
             </div>
         </div>
         <div class="col-span-10 grid grid-cols-10 pt-28">
@@ -29,7 +29,7 @@
                 <h3 class="text-4xl col-span-4">Kr. Himmelfarts Tilbud</h3>
                 <p class="col-span-4 text-lg">Vi vil gerne give muligheden for jer og jeres nærmeste til at nyde de dejlige nye sommer dage og helligdage sammen i den dejlige natur, i nærheden af det kølige Vesterhav for at have mulighed for at køle ned.</p>
                 <p class="col-span-4 text-lg">Alle tilbuddene er gældende fra d. 8. maj til d. 12. maj 2024. </p>
-                <a href="#" class="col-start-2 col-span-2 knap"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere</button></a>
+                <a href="#" class="col-start-2 col-span-2 knap text-center h-fit py-3">Læs mere</a>
             </div>
         </div>
     </div>
@@ -123,7 +123,7 @@
                 <p>Gl. Klitgaard Camping ligger i nærheden af løkken og tæt ved norden, så der er mulighed for mange forskellige oplevelser i nær området. Må det være Fårup sommerland, Nordsøen Oceanarium eller bare at nyde vestkysten.</p>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto mr-0 inline-flex">
-                <a href="#" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Se nærliggende seværdigheder</a>
+                <a href="#" class="knap font-semibold">Se nærliggende seværdigheder</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
