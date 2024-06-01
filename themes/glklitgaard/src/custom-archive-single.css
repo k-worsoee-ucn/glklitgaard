@@ -64,10 +64,6 @@
     right: -50px;
 }
 
-.Waves > svg{
-    background-repeat: repeat;
-}
-
 .fade{
     mask-image: linear-gradient(black, black 50%, rgba(0, 0, 0, 0));
 }

@@ -4,7 +4,7 @@ module.exports = {
     "*.php",
     "./src/**.css",
     "./src/js/**.js",
-    "./assets/svg/**.svg"
+    "./assets/svg/**.svg",
   ],
   theme: {
     extend: {

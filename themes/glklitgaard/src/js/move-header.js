@@ -7,7 +7,7 @@ window.addEventListener("load", ()=>{
     WPAdminBar();
     //Tailvind stadig ny til mig (victoria) så benytter js for at give padding nok til første sektion så det kan læses
     if(AdminBar != null && AdminBar != NaN && AdminBar != ""){
-        document.querySelectorAll("section")[0].style.paddingTop = Header.querySelector("nav").clientHeight+50+"px"
+        document.querySelectorAll("section")[0].style.paddingTop = Header.querySelector(".Backgroun").clientHeight+50+"px"
     }
 })
 window.addEventListener("resize",()=>{

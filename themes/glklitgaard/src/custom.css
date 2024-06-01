@@ -22,6 +22,7 @@ p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
     width:120%;
     top: 0;
     left: -20%;
+    height: 125%;
 }
 
 html {
@@ -191,7 +192,7 @@ section{height: fit-content; grid-column: 1/ span 12;}
 }
 
 .Waves>svg{
-    width: 150%;
+    width: 250%;
 }
 
 .Sunset-bg{
