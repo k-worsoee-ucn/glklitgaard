@@ -474,3 +474,13 @@ section{height: fit-content; grid-column: 1/ span 12;}
     background-size: cover;
     min-height: 70vh;
 }
+
+.imgMask {
+    mask-image: url("../assets/svg/rute-squarerip.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.fa-caret-left {
+    --fa-display: none;
+}

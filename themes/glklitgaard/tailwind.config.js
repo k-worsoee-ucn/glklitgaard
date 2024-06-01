@@ -2,9 +2,9 @@
 module.exports = {
   content: [
     "*.php", 
-    "/assets/js/*.js", 
-    "/src/**/*.css",
-    "/src/**/*.js"
+    "./src/**.css",
+    "./src/js/**.js",
+    "./assets/svg/**.svg"
   ],
   theme: {
     extend: {
