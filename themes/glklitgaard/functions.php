@@ -16,6 +16,7 @@ function theme_enqueue_styles() {
     wp_enqueue_script('slideShow', get_template_directory_uri() . '/src/js/slide-shows.js', array(), '1.0.0', 'all');
     wp_enqueue_script('addhorseshoe', get_template_directory_uri() . '/src/js/addhorseshoe.js', array(), '1.0.0', 'all');
     wp_enqueue_script('reviews', get_template_directory_uri() . '/src/js/showreviews.js', array(), '1.0.0', 'all');
+    wp_enqueue_script('routeslide', get_template_directory_uri() . '/src/js/horserouteslide.js', array(), '1.0.0', 'all');
     
     if(is_front_page()){ // gør at javascriptet kun køre på forsiden.
         // hvordan det virker er at den ser, er det forsiden, hvis ja give den et true, hvis ikke, giver den en false

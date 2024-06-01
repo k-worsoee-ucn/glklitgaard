@@ -90,12 +90,7 @@ button {
     background-image: url("../assets/svg/fp-wave.svg");
 }
 
-.fp-news {
-    background-image: url("../assets/svg/news-bg.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 .header-logo{
     margin-bottom: -2rem;
     height: 120%;
@@ -224,7 +219,65 @@ section{height: fit-content; grid-column: 1/ span 12;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+}
+
+@media screen and (min-width: 769px) {
+    .fp-hero {
+        min-height: 70vh;
+    }
+    .fp-news {
+        background-image: url("../assets/svg/news-bg.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .glk-hero {
+        min-height: 70vh;
+    }
+
+    .ovalbaneImg {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .fp-hero {
+        min-height: 20vh;
+        padding: 30% 0 !important;
+    }
+
+    .fp-welcome {
+        background-size: cover;
+    }
+
+    .fp-news-container > img {
+        height: 120%;
+    }
+
+    .glk-hero {
+        min-height: 30vh;
+    }
+
+    .foldContainer,
+    .boksContainer {
+        grid-template-rows: 70% 15% 15%;
+    }
+
+    .horse-container {
+        width: 120%;
+        margin-top: -20%;
+        margin-left: -10%;
+        padding: 20%;
+    }
+
+    .rectRip {
+        width: 120%;
+    }
+
+    .ovalbaneImg {
+        height: 30vh;
+    }
 }
 
 .fam-kallmayer {
@@ -315,7 +368,7 @@ section{height: fit-content; grid-column: 1/ span 12;}
 .horse-container {
     background-image: url("../assets/svg/horserip.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .horse-sect {
@@ -330,6 +383,8 @@ section{height: fit-content; grid-column: 1/ span 12;}
 .horse-img {
     mask-image: url(../assets/svg/horseimgrip.svg);
     mask-mode: alpha;
+    mask-repeat: no-repeat;
+    mask-size: cover
 }
 
 .horse-left {
@@ -384,6 +439,7 @@ section{height: fit-content; grid-column: 1/ span 12;}
     background-image: url("../assets/svg/bookhorsebg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
 }
 
 .paper {
@@ -433,7 +489,6 @@ section{height: fit-content; grid-column: 1/ span 12;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
 }
 
 .wave-sect {
@@ -476,11 +531,26 @@ section{height: fit-content; grid-column: 1/ span 12;}
 }
 
 .imgMask {
-    mask-image: url("../assets/svg/rute-squarerip.svg");
+    mask-image: url("../assets/svg/routeMask.svg");
     mask-size: contain;
+    mask-position: center;
     mask-repeat: no-repeat;
 }
 
-.fa-caret-left {
-    --fa-display: none;
+.slideLeft > svg > path {
+    display: none;
 }
+
+.rectRip {
+    background-image: url("../assets/svg/rect-ripbg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rectImgRip {
+    mask-image: url("../assets/svg/rect-rip-imgmask.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+

@@ -1,3 +1,4 @@
+let bodyEl = document.querySelector("body")
 if (bodyEl.classList.contains("home")) {
     const reviews = document.querySelector(".reviews")
     const theme_url = document.querySelector(".theme_url").textContent
@@ -7,7 +8,7 @@ if (bodyEl.classList.contains("home")) {
         .then(data => {
             for (let i = 0; i < 5; i++) {
                 const reviewContainer = document.createElement("div")
-                reviewContainer.classList.add("reviewContainer", "grid", "py-12", "px-5")
+                reviewContainer.classList.add("reviewContainer", "grid", "lg:py-12","py-16", "px-5")
                 reviews.append(reviewContainer)
 
                 const reviewTitle = document.createElement("h3")

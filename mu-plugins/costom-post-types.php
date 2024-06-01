@@ -162,7 +162,6 @@ function PostTypes() {
         "menu_icon" => "dashicons-tag"
     ));
     register_post_type("Priser", array(
-        "has_archive" => true,
         "show_in_rest" => true,
         "public" => true,
         "supports" => array(

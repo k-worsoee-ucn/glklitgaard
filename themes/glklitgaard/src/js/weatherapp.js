@@ -1,4 +1,4 @@
-const bodyEl = document.querySelector("body")
+bodyEl = document.querySelector("body")
 if (bodyEl.classList.contains("home")) {
     fetch("https://api.openweathermap.org/data/2.5/forecast?lat=57.42090629883396&lon=9.760785184175162&appid=bc4db9f05db9ebb9432465630a0cde72&units=metric&lang=da")
         .then(res => res.json())
@@ -27,7 +27,7 @@ if (bodyEl.classList.contains("home")) {
             // Convert the object to an array of arrays for each date
             const result = Object.values(sortedData);
             const container = document.querySelector(".forecastContainer")
-            container.classList.add(`grid-cols-${result.length.toString()}`)
+            container.classList.add(`lg:grid-cols-${result.length.toString()}`, "grid-cols-2")
             //To contain the highest temp per day
             const highestTemps = [];
             //To contain the lowest temp per day
