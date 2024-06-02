@@ -60,7 +60,7 @@
                     </svg>
                 </div>
             </div> <?php }; wp_reset_postdata(); ?>
-            <div class="mx-auto mt-16 w-fit"><a href="<?php echo get_site_url()."/sevraerdighed";?>" class="knap mb-5 text-center px-3 py-1 font-semibold">Læs mere</a></div>
+            <div class="mx-auto mt-16 w-fit"><a href="<?php echo get_site_url()."/sevaerdighed";?>" class="knap mb-5 text-center px-3 py-1 font-semibold">Læs mere</a></div>
         </div>
         <div class="relative h-fit w-fit mx-auto md:mr-auto">
             <div class="text-center z-10 text-lg mt-10 bg-white relative py-5 mx-auto md:mx-0 w-9/12 lg:w-7/12 -rotate-3">

@@ -66,7 +66,7 @@ function PostTypes() {
         "menu_icon" => "dashicons-location-alt"
     ));
 
-    register_post_type("Sevraerdigheder", array(
+    register_post_type("Sevaerdigheder", array(
         "has_archive" => true,
         "show_in_rest" => true,
         "public" => true,
@@ -74,10 +74,9 @@ function PostTypes() {
             "editor",
             "title",
             "thumbnail",
-            "excerpt"
         ),
         "rewrite" => array(
-            "slug" => "sevraerdighed"
+            "slug" => "sevaerdighed"
         ),
         "labels" => array(
             "name" => "Seværdigheder",
