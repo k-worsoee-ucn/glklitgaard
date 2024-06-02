@@ -18,9 +18,8 @@ $hasIMG = false;
                 $content = str_replace("<","<!--Cut here--> <",$content); //finder, erstatter, hvilken string
                 $content = str_replace(">","> <!--Cut here-->",$content); //erstatter
                 $parts = explode("<!--Cut here-->",$content); //skær hver gang den finder <!-- cut here -->, laver en array
-                $i = 1; // bare til at idexsere så vi ikke har så mange img på denne side :)
                 foreach($parts as $p){ // for hver del af array'et
-                    if(preg_match($pattern, $p) && $i < 4){ // hvis den har billede
+                    if(preg_match($pattern, $p)){ // hvis den har billede
                         echo $p; //print billede ud
                         $i++; // increase.
                     };
@@ -204,7 +203,7 @@ $hasIMG = false;
             <div class="h-fit w-full paper-rip absolute left-0 -top-5 rotate-180">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
-            <div class="h-fit w-full paper-rip absolute left-0 -bottom-5">
+            <div class="h-fit w-full paper-rip absolute left-0 bottom-0">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
         </div>    

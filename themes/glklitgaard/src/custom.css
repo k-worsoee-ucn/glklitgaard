@@ -462,3 +462,11 @@ section{height: fit-content; grid-column: 1/ span 12;}
 #Pladskort > img:last-of-type{
     object-position: 0 -1.5rem;
 }
+
+.paper-overlay{
+    mask-image: url("../assets/svg/paper-overlay.svg");
+    mask-repeat: no-repeat;
+    mask-position: right;
+    mask-size: 100% 100%;
+    aspect-ratio: 3 / 2;
+}
