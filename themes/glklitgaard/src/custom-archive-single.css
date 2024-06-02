@@ -44,25 +44,6 @@
 .simple-pic-drop:hover>div>svg{
     filter: brightness(1);
 }
-.tape{
-    position: absolute;
-    max-width: 150px;
-    width: 150px;
-    height: 25px;
-    rotate: -30deg;
-    z-index: 5;
-    opacity: 0.60;
-}
-
-.tape-left{
-    top: 0;
-    left: -50px;
-}
-
-.tape-right{
-    bottom: 0;
-    right: -50px;
-}
 
 .fade{
     mask-image: linear-gradient(black, black 50%, rgba(0, 0, 0, 0));
@@ -80,4 +61,15 @@
     left: 0;
     z-index: 30;
     background-color: #6b8c239b;
+}
+
+.paper-crumb > img:first-of-type{
+    fill:black;
+    mask-image: url("../assets/svg/Paper-rip-rotated.svg");
+    mask-repeat: no-repeat;
+    mask-position: 0 0;
+}
+
+.paper-crumb > img:last-of-type{
+    object-position: 0 -1.5rem;
 }

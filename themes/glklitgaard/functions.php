@@ -8,6 +8,7 @@ function theme_enqueue_styles() {
     // Tilføjer CSS filer til siden
     wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/src/output.css', array(), '1.0.0', 'all');
     wp_enqueue_style('custom', get_template_directory_uri() . '/src/custom.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('custom-archive-single', get_template_directory_uri() . '/src/custom-archive-single.css', array(), '1.0.0', 'all');
 
     // Tilføjer JavaScript Filer til siden
     wp_enqueue_script("HeadernAdminBar", get_theme_file_uri("/src/js/move-header.js"), array(),'1.0', array('strategy'  => 'defer',));
@@ -15,7 +16,6 @@ function theme_enqueue_styles() {
     wp_enqueue_script('HeaderFunctions', get_template_directory_uri() . '/src/js/header-functions.js', array(), '1.0.0', 'all');
     wp_enqueue_script('slideShow', get_template_directory_uri() . '/src/js/slide-shows.js', array(), '1.0.0', 'all');
     wp_enqueue_script('addhorseshoe', get_template_directory_uri() . '/src/js/addhorseshoe.js', array(), '1.0.0', 'all');
-    
     if(is_front_page()){ // gør at javascriptet kun køre på forsiden.
         // hvordan det virker er at den ser, er det forsiden, hvis ja give den et true, hvis ikke, giver den en false
         wp_enqueue_script('weatherapp', get_template_directory_uri() . '/src/js/weatherapp.js', array(), '1.0.0', 'all');
@@ -23,10 +23,6 @@ function theme_enqueue_styles() {
     }
     if(is_single()){
         wp_enqueue_script('SingleImg', get_template_directory_uri() . '/src/js/single-slideshow-see.js', array(), '1.0.0', 'all');
-    }
-
-    if(is_single() OR is_archive()){ // eller :)
-        wp_enqueue_style('custom-archive-single', get_template_directory_uri() . '/src/custom-archive-single.css', array(), '1.0.0', 'all');
     }
 
 }
@@ -132,6 +128,10 @@ add_action('admin_init', 'add_fields');
 
 
 
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() { // giver sider excerpts :)
+     add_post_type_support( 'page', 'excerpt' );
+}
 
 // Giv slut, nogle gange kan functions fucke up hvis den ikke har et slut punkt
 ?>

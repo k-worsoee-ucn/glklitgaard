@@ -43,6 +43,29 @@ function PostTypes() {
         "menu_icon" => "dashicons-admin-multisite"
     ));
 
+    register_post_type("Ferie-byer", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail"
+        ),
+        "rewrite" => array(
+            "slug" => "ferie-byer"
+        ),
+        "labels" => array(
+            "name" => "Ferie byer",
+            "add_new_item" => "Tilføj Ferie by",
+            "add_new" => "Tilføj Ferie by",
+            "edit_item" => "Ænder Ferie by",
+            "all_items" => "Alle Ferie byer",
+            "singular_name" => "Ferie by",
+        ),
+        "menu_icon" => "dashicons-location-alt"
+    ));
+
     register_post_type("Seværdigheder", array(
         "has_archive" => true,
         "show_in_rest" => true,
@@ -161,6 +184,8 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-tag"
     ));
+
+    
 };
 add_action('init', 'PostTypes');
 ?>

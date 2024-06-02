@@ -1,7 +1,7 @@
 <?php get_header();
 $hasIMG = false;
 ?>
-<section class="bg-gray-200 wavey-section z-10 pt-16">
+<section class="bg-gray-200 z-10 pt-16">
 
 <h1 class="text-center py-6 mt-5 text-3xl"><?php the_title();?></h1>
 </section>

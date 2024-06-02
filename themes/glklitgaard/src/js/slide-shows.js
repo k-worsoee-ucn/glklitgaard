@@ -18,13 +18,14 @@ window.addEventListener("load",()=>{ // når dokumentet loader
                     Slide(Butt.value, false); // tildel dens værdi, og så falsk (så vi kan bruge samme funktion til pilene!)
                 })
             });
-
+            if(ss.querySelector(".left")){
             ss.querySelector(".left").addEventListener("click",()=>{ // når man klikker på venstre, så kør funktionen slide(), med følgenede værdier
                 Slide(-1, true);
-            })
+            })};
+            if(ss.querySelector(".right")){
             ss.querySelector(".right").addEventListener("click",()=>{ // samme som over men... højre
                 Slide(1, true);
-            })
+            })}
 
             function Slide(Index, direction) { //< funktione slide med værdi standin's
                 const Butts = ss.querySelector(".SlideControls").querySelectorAll("button"); // find alle knapperne
