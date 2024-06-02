@@ -13,6 +13,9 @@
 </section>
 <section class="fp-news-container col-start-1 col-span-12 grid grid-cols-12 z-20 mt-20">
     <img src="<?php echo get_theme_file_uri("/assets/images/newsbg.png") ?>" alt="" class="col-start-1 col-span-12 -z-10 row-start-1 row-span-1 lg:h-full w-full object-cover lg:-mt-36 -mt-52">
+    <?php 
+        //Loop til Nyt på campingpladsen
+    ?>
     <div class="fp-news lg:col-start-3 lg:col-span-9 col-start-2 col-span-10 grid grid-cols-10 w-full lg:pb-64 row-start-1 row-span-1 lg:-mt-52">
         <div class="col-span-10 grid grid-cols-10 lg:pt-60">
             <img src="https://unsplash.it/400" alt="" class="lg:col-start-2 lg:col-span-3 col-start-1 col-span-10 bg-white pt-6 px-6 lg:pb-40 pb-60 lg:-rotate-6 shadow-md lg:row-span-1 lg:row-start-1 lg:w-8/12 lg:mr-28 w-full">
@@ -36,7 +39,7 @@
 </section>
 <section class="col-span-12 grid grid-cols-12 fam-kallmayer lg:-mt-44 z-20 lg:pb-0 pb-40">
     <img src="<?php echo get_theme_file_uri("/assets/images/famkallmayer.png") ?>" alt="" class="lg:col-span-6 col-span-12 lg:-mt-20 w-full">
-    <div class="lg:col-start-1 lg:col-span-6 col-span-10 col-start-2 lg:mx-10 text-center lg:grid lg:grid-rows-5 fam-wave">
+    <div class="lg:col-start-7 lg:col-span-6 col-span-10 col-start-2 lg:mx-10 text-center lg:grid lg:grid-rows-5 fam-wave">
         <h2 class="text-4xl font-normal row-start-1 lg:mt-28 mt-5">Vi er Familien Kallmayer</h2>
         <div class="row-start-2 text-lg">
             <p>
@@ -93,11 +96,6 @@
                 </div>
             <?php
             }
-            the_posts_pagination(array(
-                'mid_size'  => 2,
-                'prev_text' => __('Back', 'textdomain'),
-                'next_text' => __('Onward', 'textdomain'),
-            ));
             wp_reset_postdata();
             ?>
         </div>
@@ -119,7 +117,7 @@
             <a href="" class="mx-auto knap w-3/5 bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg">Se vores faciliteter</a>
         </div>
     </div>
-    <div class="grid-cols-2 gap-10 mt-32 hidden lg:grid">
+    <div class="grid-cols-2 mt-32 hidden lg:grid">
         <h2 class="text-main-brand-color col-span-12 text-center text-4xl mb-5">Plads til alle</h2>
         <div class="drop-shadow bg-yellow-100 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:col-start-1 col-span-1 col gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
             <a class="simple-pic-drop min-h-60 relative -top-5 -left-5 h-2/3 w-auto max-h-20 z-10" href="#">
@@ -135,7 +133,7 @@
                 <p>Gl. Klitgaard Camping ligger i nærheden af løkken og tæt ved norden, så der er mulighed for mange forskellige oplevelser i nær området. Må det være Fårup sommerland, Nordsøen Oceanarium eller bare at nyde vestkysten.</p>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto mr-0 inline-flex">
-                <a href="#" class="knap font-semibold">Se nærliggende seværdigheder</a>
+                <a href="#" class="knap font-semibold px-10 py-2">Se nærliggende seværdigheder</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
@@ -159,7 +157,7 @@
                 <p>Og hvis du ikke vil længere væk end bare campingpladsen, har vi masser at man kan tage sig til. om det skal være ridning af heste, at besøge vores minizoo eller nyde at være i sin egen hytte med familien.</p>
             </div>
             <div class="lg:col-span-2 md:col-span-2 w-8/12 mx-auto mr-0 inline-flex">
-                <a href="#" class="knap text-center px-3 py-1 mx-auto mt-auto font-semibold">Se vores faciliteter</a>
+                <a href="#" class="knap text-center px-10 py-2 mx-auto mt-auto font-semibold">Se vores faciliteter</a>
             </div>
 
             <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
@@ -200,7 +198,7 @@
         <div class="lg:pt-6 lg:px-6 lg:pb-10 px-2 pt-2 bg-white lg:w-10/12 w-full row-start-1 row-span-1 lg:col-start-5 col-start-4 lg:col-span-4 col-span-3 rotate-12 shadow-lg">
             <img src="<?php echo get_theme_file_uri("/assets/images/ctaimg5.png") ?>" alt="" class="w-full h-3/5 object-cover">
         </div>
-        <div class="lg:pt-6 lg:px-6 lg:pb-10 px-2 pt-2 bg-white lg:w-10/12 w-fullrow-start-1 row-span-1 lg:col-start-8 col-start-7 lg:col-span-4 col-span-3 shadow-lg -ml20 z-10">
+        <div class="lg:pt-6 lg:px-6 lg:pb-10 px-2 pt-2 bg-white lg:w-10/12 w-full row-start-1 row-span-1 lg:col-start-8 col-start-7 lg:col-span-4 col-span-3 shadow-lg -ml20 z-10">
             <img src="<?php echo get_theme_file_uri("/assets/images/ctaimg6.png") ?>" alt="" class="w-full h-3/5 object-cover">
         </div>
 
