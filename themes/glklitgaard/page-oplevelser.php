@@ -60,7 +60,7 @@
                     </svg>
                 </div>
             </div> <?php }; wp_reset_postdata(); ?>
-            <div class="mx-auto mt-16 w-fit"><a href="<?php echo get_post_type_archive_link("Seværdigheder");?>" class="knap mb-5 text-center px-3 py-1 font-semibold">Læs mere</a></div>
+            <div class="mx-auto mt-16 w-fit"><a href="<?php echo get_site_url()."/sevraerdighed";?>" class="knap mb-5 text-center px-3 py-1 font-semibold">Læs mere</a></div>
         </div>
         <div class="relative h-fit w-fit mx-auto md:mr-auto">
             <div class="text-center z-10 text-lg mt-10 bg-white relative py-5 mx-auto md:mx-0 w-9/12 lg:w-7/12 -rotate-3">
@@ -109,7 +109,7 @@
                                     echo "Alle ". $byer-1 ." byer";
                                 break;
                             }?> emmer af feriestemning og byder på charmerende caféer, hyggelige restauranter og unikke butikker.</p>
-                    <div class="mx-auto mt-5 w-fit"><a class="text-center knap py-2 px-3" href="<?php echo get_post_type_archive_link('ferie-byer');;?>">Læs mere</a></div>
+                    <div class="mx-auto mt-5 w-fit"><a class="text-center knap py-2 px-3" href="<?php echo get_post_type_archive_link('ferie-byer');?>">Læs mere</a></div>
                     </div>
                 </div>
                 <div class="tape tape-left">

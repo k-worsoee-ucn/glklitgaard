@@ -4,7 +4,7 @@
 
 <h1 class="text-center text-3xl"><?php echo post_type_archive_title( '', false );?></h1>
 </section>
-<div class="h-fit w-full rip bg-white">
+<div class="h-fit w-full rip bg-white fill-gray-200">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
 </div>
 <section class="Papery bg-yellow-100 pb-14 -mb-7 relative">

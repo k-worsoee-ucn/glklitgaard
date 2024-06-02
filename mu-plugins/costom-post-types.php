@@ -66,7 +66,7 @@ function PostTypes() {
         "menu_icon" => "dashicons-location-alt"
     ));
 
-    register_post_type("Seværdigheder", array(
+    register_post_type("Sevraerdigheder", array(
         "has_archive" => true,
         "show_in_rest" => true,
         "public" => true,
