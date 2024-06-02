@@ -42,6 +42,28 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-admin-multisite"
     ));
+    register_post_type("Naturguide", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail"
+        ),
+        "rewrite" => array(
+            "slug" => "naturguide"
+        ),
+        "labels" => array(
+            "name" => "Naturguide",
+            "add_new_item" => "Tilføj Til Naturguiden",
+            "add_new" => "Tilføj Til Naturguide",
+            "edit_item" => "Ænder I Naturguide",
+            "all_items" => "Alt Naturguide indhold",
+            "singular_name" => "Naturguide",
+        ),
+        "menu_icon" => "dashicons-buddicons-replies"
+    ));
 
     register_post_type("Ferie-byer", array(
         "has_archive" => true,

@@ -3,7 +3,7 @@
 <?php get_header();
 ?>
 <section class="bg-gray-200 wavey-section z-10 pt-16">
-<h1 class="text-center py-6"><?php the_title();?></h1>
+<h1 class="text-center py-6"><?php echo get_the_title();?></h1>
 </section>
 <div class="h-fit w-full rip fill-gray-200 -mb-10">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>

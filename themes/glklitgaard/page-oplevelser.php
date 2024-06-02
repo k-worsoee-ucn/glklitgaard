@@ -30,7 +30,7 @@
         <h2 class="text-center w-full text-xl mb-8">Sedværdigheder i nærheden</h2>
         <?php     $sedværdighed = new WP_Query(array(
             'posts_per_page'    => 2,
-            'post_type' => "Seværdigheder",
+            'post_type' => "Sevaerdigheder",
         )); 
         while($sedværdighed->have_posts()){
             $sedværdighed->the_post();
@@ -49,9 +49,9 @@
                         the_excerpt(); //så udskriv den.
                     }
                     else { // men hvis ikke
-                        echo wp_trim_words(get_the_content(), 100, "..." ); // så tag indholdet, og trim det ned til 100 ord, til sidst indsæt ". . ." hvis der er mere end 100 ord.
+                        echo wp_trim_words(get_the_content(), 25, "..." ); // så tag indholdet, og trim det ned til 100 ord, til sidst indsæt ". . ." hvis der er mere end 100 ord.
                     };?>
-                    <div class="mx-auto mt-5 w-fit h-fit text-base"><a href="<?php echo post_permalink();//giv a-tag (knappen) linket til posten?>" class="knap mb-5 text-center px-3 py-1 font-semibold">Læs mere</a></div>
+                    <div class="mx-auto mt-5 w-fit h-fit text-base z-20 relative"><a href="<?php echo post_permalink();//giv a-tag (knappen) linket til posten?>" class="knap mb-5 text-center px-3 py-1 font-semibold">Læs mere</a></div>
                 </div>
                 <div class="absolute inline-flex w-full top-full lg:col-span-2 flex-nowrap -mt-0.5">
                     <div class="bg-yellow-100 h-10 w-full -mr-0.5 pr-0.5"></div>
@@ -121,4 +121,4 @@
         </div>
         <hr class="hidden-push">
 </section>
-<?php get_footer();?>
+<?php wp_reset_postdata(); get_footer();?>
