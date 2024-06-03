@@ -39,7 +39,7 @@
         <div class="rectRip p-10 lg:col-span-3 lg:col-start-1 col-start-1 col-span-12 lg:row-start-1 lg:row-span-1 row-start-2 row-span-1 lg:-mt-0 -mt-72">
             <h3 class="lg:mr-40 text-2xl lg:text-left text-center lg:mt-0 mt-5">Hytter</h3>
             <p class="lg:mr-40 my-10">Vi har 24 hytter, som står klar til at huse jer alle og har I brug for viden omkring området, så er det kun at spørge os til råds.</p>
-            <a href="" class="mt-5 ml-20 knap bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg mr-30">Se hytter</a>
+            <a href="<?php echo get_site_url() . "/udlejning" ?>" class="mt-5 ml-20 knap bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg mr-30">Se hytter</a>
         </div>
         <img src="<?php echo get_theme_file_uri("/assets/images/HytterImg.png") ?>" alt="" class="rectImgRip lg:col-start-3 col-start-2 lg:col-span-2 col-span-5 row-start-1 row-span-1 z-10 lg:mt-14">
     </div>
