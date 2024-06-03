@@ -55,7 +55,7 @@
             <h2 class="text-center text-3xl font-normal py-5">Tag din hest med på ferie</h2>
             <img src="<?php echo get_theme_file_uri("/assets/images/taghest.png") ?>" alt="" class="aspect-square object-cover">
             <p class="text-lg">Som en af de få campingpladser i Danmark tilbyder vi, at man kan tage sin egen hest med på camping - Det være sig i enten kortere eller længere perioder.</p>
-            <a href="#" class="knap"><button class="text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere her</button></a>
+            <a href="<?php echo get_site_url() . "/tag-din-hest-med-pa-ferie" ?>" class="knap"><button class="text-center px-3 py-1 mx-auto mt-auto font-semibold">Læs mere her</button></a>
             <img class="absolute -right-12 -top-12" src="<?php echo get_theme_file_uri("/assets/svg/tape_slim.svg") ?>" alt="">
             <img class="absolute -left-12 -bottom-12" src="<?php echo get_theme_file_uri("/assets/svg/tape_slim.svg") ?>" alt="">
         </div>

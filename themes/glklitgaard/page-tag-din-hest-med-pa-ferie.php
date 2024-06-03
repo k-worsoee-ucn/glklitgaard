@@ -24,9 +24,9 @@
 <section class="col-span-12 py-40 weatherAndActivities z-20 grid grid-cols-12 -mt-96">
     <svg class="fill-brand-lightgreen w-full my-auto slideLeft row-start-2 row-span-1 col-start-1 col-span-1"><?php echo file_get_contents(get_theme_file_uri("/assets/svg/caret-left-solid.svg")) ?></svg>
     <h2 class="row-start-1 col-span-12 text-center text-4xl font-normal lg:mt-20 mt-40">Ruter</h2>
-    <div class="col-start-2 lg:col-span-6 col-span-10 grid grid-cols-8 lg:grid-rows-5 w-full">
-        <img src="<?php echo get_theme_file_uri("assets/images/rute1.png") ?>" alt="" class="imgMask w-full row-start-1 row-span-4 col-span-6 routeImg1">
-        <img src="<?php echo get_theme_file_uri("/assets/images/rute1-sub.png") ?>" alt="" class="imgMask w-full row-start-3 row-span-3 mt-16 col-start-5 col-span-4 z-10 ml-10 routeImg2">
+    <div class="col-start-2 lg:col-span-6 col-span-10 grid grid-cols-8 lg:grid-rows-5">
+        <img src="<?php echo get_theme_file_uri("assets/images/rute1.png") ?>" alt="" class="imgMask w-full lg:row-start-1 lg:row-span-4 lg:col-start-1 lg:col-span-6 col-start-1 col-span-8 routeImg1">
+        <img src="<?php echo get_theme_file_uri("/assets/images/rute1-sub.png") ?>" alt="" class="imgMask w-full lg:row-start-3 lg:row-span-3 lg:mt-16 lg:col-start-5 col-start-2 lg:col-span-4 col-span-6 z-10 lg:ml-10 routeImg2">
     </div>
     <div class="lg:col-start-9 col-start-2 lg:col-span-3 col-span-10 text-center px-20 lg:mt-28">
         <h3 class="text-3xl font-normal mb-5 routeTitle">Stranden</h3>
@@ -47,7 +47,7 @@
         <div class="rectRip p-10 lg:col-span-3 lg:col-start-1 col-start-1 col-span-12 lg:row-start-1 row-start-2 row-span-1 lg:-mt-0 -mt-72">
             <h3 class="lg:mr-40 text-2xl lg:text-left text-center lg:mt-0 mt-5">Rideklubben på tur</h3>
             <p class="lg:mr-40 my-10">Er det hele rideklubben, som skal på tur, så er det heller ikke noget problem. I er meget velkommen til at kontakte os og høre mere.</p>
-            <a href="" class="lg:mt-5 ml-20 knap bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg mr-30">Kontakt os</a>
+            <a href="<?php echo get_site_url() . "/kontakt-os" ?>" class="lg:mt-5 ml-20 knap bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg mr-30">Kontakt os</a>
         </div>
         <img src="<?php echo get_theme_file_uri("/assets/images/HytterImg.png") ?>" alt="" class="rectImgRip lg:col-start-3 col-start-2 lg:col-span-2 col-span-5 row-start-1 row-span-1 z-10 lg:mt-14">
     </div>
@@ -55,7 +55,7 @@
         <div class="rectRip p-10 lg:col-span-3 lg:col-start-1 col-start-1 col-span-12 lg:row-start-1 row-start-2 row-span-1 lg:-mt-0 -mt-72">
             <h3 class="lg:mr-40 text-2xl lg:text-left text-center lg:mt-0 mt-5">Fastligger</h3>
             <p class="lg:mr-40 my-2 mb-3">Som fastligger kan du også have din hest med. Du betaler et beløb pr. hest, så kan du frit medbringe hesten henover hele sæsonen. Har du flere heste med, så falder prisen for disse efterfølgende heste.</p>
-            <a href="" class="mt-5 ml-20 knap bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg mr-30">Kontakt os</a>
+            <a href="<?php echo get_site_url() . "/kontakt-os" ?>" class="mt-5 ml-20 knap bg-main-interaction-color px-10 py-2 rounded-full font-bold text-lg mr-30">Kontakt os</a>
         </div>
         <img src="<?php echo get_theme_file_uri("/assets/images/HytterImg.png") ?>" alt="" class="rectImgRip lg:col-start-3 col-start-2 lg:col-span-2 col-span-5 row-start-1 row-span-1 z-10 lg:mt-14">
     </div>
@@ -84,7 +84,7 @@
     <div class="lg:col-start-8 lg:col-span-4 col-start-2 col-span-10 text-center my-auto lg:mt-0 mt-10">
         <h2 class="text-4xl">Spørgsmål?</h2>
         <p class="text-lg">Har du spørgsmål eller en forespørgsel, så er er du meget velkommen til at kontakte os og høre mere.</p>
-        <a href="#" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
+        <a href="<?php echo get_site_url() . "/kontakt-os" ?>" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
         <h3>Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
 </div>

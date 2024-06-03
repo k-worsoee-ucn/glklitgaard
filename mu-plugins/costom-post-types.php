@@ -138,7 +138,7 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-carrot"
     ));
-    register_post_type("Tilbud", array(
+    register_post_type("paske-tilbud", array(
         "has_archive" => true,
         "show_in_rest" => true,
         "public" => true,
@@ -149,15 +149,61 @@ function PostTypes() {
             "excerpt"
         ),
         "rewrite" => array(
-            "slug" => "tilbud"
+            "slug" => "paske-tilbud"
         ),
         "labels" => array(
-            "name" => "Tilbud",
-            "add_new_item" => "Tilføj Tilbud",
-            "add_new" => "Tilføj Tilbud",
-            "edit_item" => "Ænder Tilbud",
-            "all_items" => "Alle Tilbud",
-            "singular_name" => "Tilbud",
+            "name" => "Påske Tilbud",
+            "add_new_item" => "Tilføj Påske Tilbud",
+            "add_new" => "Tilføj Påske Tilbud",
+            "edit_item" => "Ænder Påske Tilbud",
+            "all_items" => "Alle Påske Tilbud",
+            "singular_name" => "Påske Tilbud",
+        ),
+        "menu_icon" => "dashicons-tag"
+    ));
+    register_post_type("krhimmelfarts-tilbud", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail",
+            "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "krhimmelfarts-tilbud"
+        ),
+        "labels" => array(
+            "name" => "Kr. Himmelfarts Tilbud",
+            "add_new_item" => "Tilføj Kr. Himmelfarts Tilbud",
+            "add_new" => "Tilføj Kr. Himmelfarts Tilbud",
+            "edit_item" => "Ænder Kr. Himmelfarts Tilbud",
+            "all_items" => "Alle Kr. Himmelfarts Tilbud",
+            "singular_name" => "Kr. Himmelfarts Tilbud",
+        ),
+        "menu_icon" => "dashicons-tag"
+    ));
+    register_post_type("pinse-tilbud", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail",
+            "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "pinse-tilbud"
+        ),
+        "labels" => array(
+            "name" => "Pinse Tilbud",
+            "add_new_item" => "Tilføj Pinse Tilbud",
+            "add_new" => "Tilføj Pinse Tilbud",
+            "edit_item" => "Ænder Pinse Tilbud",
+            "all_items" => "Alle Pinse Tilbud",
+            "singular_name" => "Pinse Tilbud",
         ),
         "menu_icon" => "dashicons-tag"
     ));
@@ -182,6 +228,28 @@ function PostTypes() {
             "singular_name" => "Pris",
         ),
         "menu_icon" => "dashicons-money-alt"
+    ));
+    register_post_type("Nyheder", array(
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail",
+            "excerpt"
+        ),
+        "rewrite" => array(
+            "slug" => "nyheder"
+        ),
+        "labels" => array(
+            "name" => "Nyheder",
+            "add_new_item" => "Tilføj Nyheder",
+            "add_new" => "Tilføj Nyhed",
+            "edit_item" => "Ænder Nyheder",
+            "all_items" => "Alle Nyheder",
+            "singular_name" => "Nyhed",
+        ),
+        "menu_icon" => "dashicons-media-default"
     ));
 };
 add_action('init', 'PostTypes');

@@ -14,12 +14,12 @@
     <div class="lg:col-start-2 col-start-2 lg:col-span-4 col-span-10 grid grid-cols-6 row-start-2 row-span-3 mt-20">
         <img src="<?php echo get_theme_file_uri("/assets/svg/horseshoe-single.svg") ?>" alt="" class="col-span-1 col-start-1">
         <p class="lg:text-3xl text-lg col-start-2 col-span-5 row-start-1 lg:row-span-2">Kigger på vores aktivitetskalender, for at se om der er nogle relevante ride aktiviteter.</p>
-        <a class="knap lg:row-start-3 row-start-2 lg:col-start-4 col-start-1 lg:col-span-3 col-span-6 bg-main-interaction-color px-10 py-2 lg:my-4 rounded-full font-bold lg:text-xl text-center lg:-mt-0 -mt-3 h-fit" href="">Se aktivitetskalenderen</a>
+        <a class="knap lg:row-start-3 row-start-2 lg:col-start-4 col-start-1 lg:col-span-3 col-span-6 bg-main-interaction-color px-10 py-2 lg:my-4 rounded-full font-bold lg:text-xl text-center lg:-mt-0 -mt-3 h-fit" href="<?php echo get_site_url() . "/aktiviteter" ?>">Se aktivitetskalenderen</a>
     </div>
     <div class="lg:col-start-7 col-start-2 lg:col-span-4 col-span-10 grid grid-cols-6 row-start-4 row-span-3 lg:mt-0 mt-32">
         <img src="<?php echo get_theme_file_uri("/assets/svg/horseshoe-single.svg") ?>" alt="" class="col-span-1 lg:col-start-1 col-start-6">
         <p class="lg:text-3xl text-lg lg:col-start-2 col-start-1 col-span-5 row-start-1 row-span-2">Skriv i mailen lidt om hvem (navn, alder og erfaring) det er der skal ud at ride. Også gerne et mobiltelefonnr. og skal I bo på pladsen, så henvis til jeres reservation.</p>
-        <a class="lg:w-3/4 row-start-3 lg:col-start-4 col-start-2 lg:col-span-3 col-span-4 bg-main-interaction-color px-10 py-2 my-4 rounded-full font-bold text-xl text-center" href="">Kontakt os</a>
+        <a class="lg:w-3/4 row-start-3 lg:col-start-4 col-start-2 lg:col-span-3 col-span-4 bg-main-interaction-color px-10 py-2 my-4 rounded-full font-bold text-xl text-center" href="<?php get_site_url() . "/kontakt-os" ?>">Kontakt os</a>
     </div>
     <div class="lg:col-start-2 col-start-2 lg:col-span-4 col-span-10 grid grid-cols-6 row-start-7 row-span-3 lg:mt-0 mt-10">
         <img src="<?php echo get_theme_file_uri("/assets/svg/horseshoe-single.svg") ?>" alt="" class="col-span-1 col-start-1">
@@ -46,7 +46,7 @@
     <div class="lg:col-start-8 lg:col-span-4 col-start-2 col-span-10 text-center my-auto lg:mt-0 mt-10">
         <h2 class="text-4xl">Spørgsmål?</h2>
         <p class="text-lg">Har du spørgsmål til vores hest eller ønsker du at booke en ridetur på en af dem, så du velkommen til at kontakte os.</p>
-        <a href="#" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
+        <a href="<?php echo get_site_url() . "/kontakt-os" ?>" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
         <h3>Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
 </div>

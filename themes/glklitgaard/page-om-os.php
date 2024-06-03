@@ -23,7 +23,7 @@
     <div class="lg:col-start-8 lg:col-span-4 col-start-2 col-span-10 text-center my-auto lg:mt-0 mt-10">
         <h2 class="text-4xl">Vil du vide mere?</h2>
         <p class="text-lg">Har du spørgsmål, kommentarer eller feedback? Vi vil elske at høre fra dig!</p>
-        <a href="#" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
+        <a href="<?php echo get_site_url() . "/kontakt-os" ?>" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
         <h3>Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
 </div>

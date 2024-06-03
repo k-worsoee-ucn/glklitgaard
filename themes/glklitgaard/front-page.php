@@ -1,40 +1,77 @@
 <?php get_header() ?>
-<section class="fp-hero col-span-12 text-center text-4xl">
-    <h1 class="lg:mt-32 sm:mt-10">Velkommen til</h1>
-    <h1 class="text-secondary-brand-color">Gl. Klitgaard Camping & Hytteby</h1>
+<section class="fp-hero col-span-12 text-center">
+    <h1 class="lg:mt-32 sm:mt-10 text-secondary-brand-color text-4xl">Gl. Klitgaard Camping & Hytteby</h1>
+    <h2 class="text-2xl">Skøn natur, Vesterhavet, aktiviter og plads til alle</h2>
 </section>
 <img src="<?php echo get_theme_file_uri("/assets/images/sol.png") ?>" alt="" class="col-span-1 absolute top-2/4 z-20 hidden lg:block">
 <section class="fp-welcome col-span-12 grid grid-cols-12 text-center z-10 lg:pb-16 pb-28 -mt-5">
     <p class="lg:col-start-4 lg:col-span-6 col-start-2 col-span-10 text-lg mt-12">
-        Gl. Klitgaard Camping er en smukt beliggende campingplads ved det dejlige Vesterhav med en skøn strand, perfekt til aktiviteter. Stemningen er afslappet og imødekommende, hvor der er plads til alle. Om du bare vil ud i naturen, ride heste, bare vil deltage i vores aktiviteter eller besøge vores Mini-Zoo.
+        Gl. Klitgaard Camping er en <b>smukt beliggende</b> campingplads ved det <b>dejlige Vesterhav</b> med en <b>skøn strand</b>, perfekt til <b>aktiviteter</b>. Stemningen er <b>afslappet</b> og <b>imødekommende</b>, hvor der er <b>plads til alle</b>. Om du bare vil ud i <b>naturen</b>, <b>ride heste</b>, bare vil deltage i vores aktiviteter eller besøge vores <b>Mini-Zoo</b>.
     </p>
     <p class="col-start-4 col-span-6 text-lg">Vi tilbyder et bredt udvalg af hytter, campingvogne og telte.</p>
     <p class="col-start-4 col-span-6 text-lg mb-12">Vi håber at byde jer velkommen!</p>
 </section>
 <section class="fp-news-container col-start-1 col-span-12 grid grid-cols-12 z-20 mt-20">
-    <img src="<?php echo get_theme_file_uri("/assets/images/newsbg.png") ?>" alt="" class="col-start-1 col-span-12 -z-10 row-start-1 row-span-1 lg:h-full w-full object-cover lg:-mt-36 -mt-52">
-    <?php 
-        //Loop til Nyt på campingpladsen
-    ?>
-    <div class="fp-news lg:col-start-3 lg:col-span-9 col-start-2 col-span-10 grid grid-cols-10 w-full lg:pb-64 row-start-1 row-span-1 lg:-mt-52">
-        <div class="col-span-10 grid grid-cols-10 lg:pt-60">
-            <img src="https://unsplash.it/400" alt="" class="lg:col-start-2 lg:col-span-3 col-start-1 col-span-10 bg-white pt-6 px-6 lg:pb-40 pb-60 lg:-rotate-6 shadow-md lg:row-span-1 lg:row-start-1 lg:w-8/12 lg:mr-28 w-full">
-            <div class="lg:col-start-5 lg:col-span-4 lg:row-span-1 col-start-2 col-span-8 lg:row-start-1 grid grid-cols-4 row-start-2 -mt-60 lg:-mt-0">
-                <h3 class="lg:text-4xl text-xl text-center lg:text-left col-span-4">Kr. Himmelfarts Tilbud</h3>
-                <p class="col-span-4 lg:text-lg">Vi vil gerne give muligheden for jer og jeres nærmeste til at nyde de dejlige nye sommer dage og helligdage sammen i den dejlige natur, i nærheden af det kølige Vesterhav for at have mulighed for at køle ned.</p>
-                <p class="col-span-4 lg:text-lg">Alle tilbuddene er gældende fra d. 8. maj til d. 12. maj 2024. </p>
-                <a href="#" class="col-start-2 col-span-2 knap text-center h-fit py-3 lg:mt-0 mt-10">Læs mere</a>
+    <img src="<?php echo get_theme_file_uri("/assets/images/newsbg.png") ?>" alt="" class="col-start-1 col-span-12 -z-10 row-start-1 row-span-3 lg:h-full w-full object-cover lg:-mt-36 -mt-52">
+    <h2 class="text-4xl row-start-2 col-start-1 col-span-12 text-center lg:-mt-60 -mt-20">Nyt på campingpladsen</h2>
+    <div class="fp-news lg:col-start-3 lg:col-span-9 col-start-2 col-span-10 grid grid-cols-10 w-full lg:pb-64 row-start-3 row-span-1 lg:-mt-52">
+        <?php
+        $tilbud = new WP_Query(array(
+            'posts_per_page' => 1,
+            'post_type' => 'Tilbud',
+            'meta_query' => array(
+                'date' => array(
+                    'key' => 'date_from',
+                    'type' => 'DATE',
+                ),
+            ),
+            'orderby' => array(
+                'date' => 'ASC',
+                'time_from' => 'ASC'
+            )
+        ));
+
+        while ($tilbud->have_posts()) {
+            $tilbud->the_post();
+        ?>
+            <div class="col-span-10 grid grid-cols-10 lg:pt-60">
+                <img src="<?php echo the_post_thumbnail_url("small-thumb") ?>" alt="" class="lg:col-start-2 lg:col-span-3 col-start-1 col-span-10 bg-white pt-6 px-6 lg:pb-40 pb-60 lg:-rotate-6 shadow-md lg:row-span-1 lg:row-start-1 lg:w-8/12 lg:mr-28 w-full">
+                <div class="lg:col-start-5 lg:col-span-4 lg:row-span-1 col-start-2 col-span-8 lg:row-start-1 grid grid-cols-4 row-start-2 -mt-60 lg:-mt-0">
+                    <h3 class="lg:text-4xl text-xl text-center lg:text-left col-span-4"><?php the_title() ?></h3>
+                    <p class="col-span-4 lg:text-lg"><?php the_field("desc") ?></p>
+                    <p class="col-span-4 lg:text-lg"><?php the_field("offer") ?></p>
+                    <a href="<?php echo get_site_url() . "/tilbud" ?>" class="col-start-2 col-span-2 knap text-center h-fit py-3 lg:mt-0 mt-10">Læs mere</a>
+                </div>
             </div>
-        </div>
-        <div class="col-span-10 grid grid-cols-10 lg:mt-0 mt-20">
-            <img src="https://unsplash.it/400" alt="" class="lg:col-start-6 lg:col-span-3 col-start-1 col-span-10 bg-white  pt-6 px-6 lg:pb-40 pb-60 lg:-rotate-6 shadow-md lg:row-span-1 lg:row-start-1 lg:w-8/12 lg:ml-28 w-full">
-            <div class="lg:col-start-2 lg:col-span-4 lg:row-span-1 col-start-2 col-span-8 lg:row-start-1 grid grid-cols-4 row-start-2 -mt-60 lg:-mt-0"">
-                <h3 class="lg:text-4xl text-xl text-center lg:text-left col-span-4">Kr. Himmelfarts Tilbud</h3>
-                <p class="col-span-4 lg:text-lg">Vi vil gerne give muligheden for jer og jeres nærmeste til at nyde de dejlige nye sommer dage og helligdage sammen i den dejlige natur, i nærheden af det kølige Vesterhav for at have mulighed for at køle ned.</p>
-                <p class="col-span-4 lg:text-lg">Alle tilbuddene er gældende fra d. 8. maj til d. 12. maj 2024. </p>
-                <a href="#" class="col-start-2 col-span-2 knap text-center h-fit py-3 lg:mt-0 mt-10">Læs mere</a>
+        <?php
+        }
+
+        wp_reset_postdata();
+
+        $news = new WP_Query(array(
+            'posts_per_page' => 1,
+            'post_type' => 'Nyheder',
+            'orderby' => array(
+                'date' => 'DESC'
+            )
+        ));
+
+        while ($news->have_posts()) {
+            $news->the_post();
+        ?>
+            <div class="col-span-10 grid grid-cols-10 lg:mt-10 mt-20">
+                <img src="<?php echo the_post_thumbnail_url("small-thumb") ?>" alt="" class="lg:col-start-6 lg:col-span-3 col-start-1 col-span-10 bg-white  pt-6 px-6 lg:pb-40 pb-60 lg:-rotate-6 shadow-md lg:row-span-1 lg:row-start-1 lg:w-8/12 lg:ml-28 w-full">
+                <div class="lg:col-start-2 lg:col-span-4 lg:row-span-1 col-start-2 col-span-8 lg:row-start-1 grid grid-cols-4 row-start-3 -mt-60 lg:-mt-0"">
+                    <h3 class=" lg:text-4xl text-xl text-center lg:text-left col-span-4"><?php the_title() ?></h3>
+                    <p class="col-span-4 lg:text-lg"><?php the_field("desc") ?></p>
+                </div>
             </div>
-        </div>
+        <?php
+        }
+        wp_reset_postdata();
+        ?>
+
+
     </div>
 </section>
 <section class="col-span-12 grid grid-cols-12 fam-kallmayer lg:-mt-44 z-20 lg:pb-0 pb-40">
@@ -50,7 +87,7 @@
             </p>
         </div>
         <div class="row-start-3 mt-10">
-            <a class="knap" href=""><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere om os</button></a>
+            <a class="knap" href="<?php echo get_site_url() . "/om-os" ?>"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto">Læs mere om os</button></a>
         </div>
         <h3 class="row-start-4 mx-auto font-bold">Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
@@ -92,7 +129,7 @@
                     <h2 class="mt-5"><?php echo the_title() ?></h2>
                     <p><?php echo the_field("date") ?> - <?php echo the_field("time_from") ?></p>
                     <p>Pris: <?php echo the_field("price") ?></p>
-                    <a class="lg:mx-24 mx-16 knap" href=""><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
+                    <a class="lg:mx-24 mx-16 knap" href="<?php echo the_permalink() ?>"><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
                 </div>
             <?php
             }
@@ -101,7 +138,7 @@
         </div>
         <div class="text-center grid grid-cols-12 mt-10">
             <p class="text-lg lg:col-start-5 lg:col-span-4 row-start-1 lg:mx-20 col-start-2 col-span-10">Vi har altid noget i gang hos Gl. Klitgaard, hesteridning, dyre fodring, med mere.</p>
-            <a class="lg:col-start-6 lg:col-span-2 col-start-3 col-span-8 row-start-2 knap bg-main-interaction-color px-10 py-2 rounded-full mx-auto font-bold text-lg" href="">Se alle vores aktiviteter</a>
+            <a class="lg:col-start-6 lg:col-span-2 col-start-3 col-span-8 row-start-2 knap bg-main-interaction-color px-10 py-2 rounded-full mx-auto font-bold text-lg" href="<?php echo get_site_url() . "/aktiviteter" ?>">Se alle vores aktiviteter</a>
         </div>
     </div>
 </section>
@@ -149,7 +186,7 @@
                     <?php echo file_get_contents(get_theme_file_uri("/assets/svg/tac.svg")); //henter og indsætter inholdet fra theme mappen/assets/svg/tac 
                     ?>
                 </div>
-                <img class="drop-shadow-sm h-full min-h-60 md:min-h-52 lg:min-h-40 w-full object-cover" src="<?php echo get_theme_file_uri("/assets/images/faciliteter.png");?>" alt="">
+                <img class="drop-shadow-sm h-full min-h-60 md:min-h-52 lg:min-h-40 w-full object-cover" src="<?php echo get_theme_file_uri("/assets/images/faciliteter.png"); ?>" alt="">
             </a>
             <div class="col-start-1 md:col-span-2 lg:col-span-2 h-10 lg:h-6 absolute bg-yellow-800 opacity-20 row-start-1 row-span-1 w-full"></div>
             <div class="mt-40 md:mt-10 lg:mt-7 w-10/12 mx-auto md:mx-0 lg:mx-0 md:min-h-40 lg:min-h-32">
@@ -206,7 +243,7 @@
     <div class="lg:col-start-8 lg:col-span-4 col-start-2 col-span-10 text-center my-auto lg:mt-0 mt-10">
         <h2 class="text-4xl">Vil du vide mere?</h2>
         <p class="text-lg">Har du spørgsmål, kommentarer eller feedback? Vi vil elske at høre fra dig!</p>
-        <a href="#" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
+        <a href="<?php echo get_site_url() . "/kontakt-os" ?>" class="knap"><button class="bg-main-interaction-color px-10 py-2 my-4 rounded-full">Kontakt os</button></a>
         <h3>Vi håber vi ses på Gl. Klitgaard Camping.</h3>
     </div>
 </div>
