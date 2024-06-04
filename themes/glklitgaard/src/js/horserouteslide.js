@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    if (window.location.href.includes("tag-din-hest-med-pa-ferie")) {
+    if (window.location.href.includes("tag-din-hest-med-paa-ferie")) {
         let i = 1;
         const routeImg1 = document.querySelector(".routeImg1")
         const routeImg1Url = routeImg1.getAttribute("src")
