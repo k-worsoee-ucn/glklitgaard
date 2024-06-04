@@ -247,6 +247,7 @@ wp_reset_postdata(); $Aktivitet = new WP_Query(array(
                         <h3 class="w-full text-lg text-center my-3"><?php echo get_the_title();?></h3>
                         <p class="w-full"><?php echo get_field("date");?> - Fra kl. <?php echo get_field("time_from")?></p>
                         <p class="w-full mt-2">Pris: <?php echo get_field("price");?></p>
+                        <a href="<?php echo get_site_url("/kontakt-os"); ?>" class="knap my-12 px-10 py-2 rounded-full">Læs mere</a>
                     </div>
         <?php }?>
 
