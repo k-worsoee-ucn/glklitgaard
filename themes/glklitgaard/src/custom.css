@@ -132,7 +132,7 @@ section{height: fit-content; grid-column: 1/ span 12;}
 .wavey-section{
     z-index: 4;
 }
-#Book-sol{transition: 350ms ease-in-out;}
+
 #Sun-figure{
     transition: 500ms linear;
     rotate: 0deg;
