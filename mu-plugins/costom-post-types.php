@@ -59,7 +59,7 @@ function PostTypes() {
             "add_new_item" => "Tilføj Til Naturguiden",
             "add_new" => "Tilføj Til Naturguide",
             "edit_item" => "Ænder I Naturguide",
-            "all_items" => "Alt Naturguide indhold",
+            "all_items" => "Naturguide",
             "singular_name" => "Naturguide",
         ),
         "menu_icon" => "dashicons-buddicons-replies"
@@ -82,7 +82,7 @@ function PostTypes() {
             "add_new_item" => "Tilføj Ferie by",
             "add_new" => "Tilføj Ferie by",
             "edit_item" => "Ænder Ferie by",
-            "all_items" => "Alle Ferie byer",
+            "all_items" => "Ferie byer",
             "singular_name" => "Ferie by",
         ),
         "menu_icon" => "dashicons-location-alt"
@@ -105,7 +105,7 @@ function PostTypes() {
             "add_new_item" => "Tilføj Seværdighed",
             "add_new" => "Tilføj Seværdighed",
             "edit_item" => "Ænder Seværdighed",
-            "all_items" => "Alle Seværdigheder",
+            "all_items" => "Seværdigheder",
             "singular_name" => "Seværdighed",
         ),
         "menu_icon" => "dashicons-tickets"

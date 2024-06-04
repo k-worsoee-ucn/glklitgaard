@@ -80,6 +80,21 @@ $hasIMG = false;
                     <p class="text-center"><?php echo get_field("kokken_service")?></p>
                 </div>
             </div>
+            <?php $GestPris = new WP_Query(array(
+                'posts_per_page'    => 1,
+                'post_type' => "page",
+                'pagename' => "vores-priser",));
+                if($GestPris->have_posts())
+                while($GestPris->have_posts()){
+                    $GestPris->the_post();
+                    if(have_rows("gaestekort")){
+                        while(have_rows("gaestekort")){ the_row();?>
+                <p class="mt-6">
+                <?php
+                      echo "Daggæst er ".get_sub_field("dagsgaest").",- pr. besøg."; ?>
+                </p>
+                <?php }}}?>
+            
         </div>
     <div class="bg-slate-50 col-start-2 col-span-10 p-6 grid grid-cols-3 md:p-3 shadow-sm relative h-fit md:col-start-8 lg:col-start-9 md:col-span-4 lg:col-span-3 border-main-brand-color">
         <div class="grid grid-cols-1 w-full h-fit col-span-3">

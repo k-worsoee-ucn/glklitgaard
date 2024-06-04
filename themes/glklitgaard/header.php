@@ -109,7 +109,7 @@
                 <?php   $Omenu = wp_get_nav_menu_object( $location['oplevelse_menu'] );
                         $Omenuitems = null;
                         if($Omenu){
-                            $Omenuitems = wp_get_nav_menu_items( $Hmenu->term_id, array( 'order' => 'DESC' ));
+                            $Omenuitems = wp_get_nav_menu_items( $Omenu->term_id, array( 'order' => 'DESC' ));
                         }
                         $parentID = null; // resætte den til nuller
 
@@ -157,7 +157,7 @@
                 <?php   $Pmenu = wp_get_nav_menu_object( $location['pris_menu'] );
                         $Pmenuitems = null;
                         if($Pmenu){
-                            $Pmenuitems = wp_get_nav_menu_items( $Hmenu->term_id, array( 'order' => 'DESC' ));
+                            $Pmenuitems = wp_get_nav_menu_items( $Pmenu->term_id, array( 'order' => 'DESC' ));
                         }
                         $parentID = null; // resætte den til nuller
 
