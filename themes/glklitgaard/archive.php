@@ -9,7 +9,7 @@
 </div>
 <section class="Papery bg-yellow-100 pb-14 -mb-7 relative -mt-6">
 <hr class="hidden-push">
-<img src="<?php echo get_theme_file_uri("/assets/images/crumpled-paper.jpg") ?>" alt="crumpled paper" class="absolute w-full h-full object-fill opacity-20 top-0 left-0">
+<img src="<?php echo get_theme_file_uri("/assets/images/crumpled-paper.jpg") ?>" alt="crumpled paper" class="absolute w-full h-full object-cover object-center opacity-20 top-0 left-0">
 <div class="grid grid-cols-2 gap-10 w-10/12 mx-auto relative">
     <?php while(have_posts()){
         the_post();?>

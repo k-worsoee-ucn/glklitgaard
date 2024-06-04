@@ -3,7 +3,7 @@
 <section class="bg-gray-200 wavey-section z-10 grid-cols-1 grid md:grid-cols-2 w-full pt-16 pb-10 relative overflow-hidden">
 <img class="paper-overlay relative left-0 scale-110 md:-left-32 lg:-left-16 md:-top-12 w-full md:scale-150 object-center object-cover" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php get_the_title(); ?>">
 <?php if(has_post_thumbnail()){?>
-            <div class="w-10/12 md:w-9/12 mx-auto mt-4">
+            <div class="w-10/12 md:w-9/12 ml-auto mr-10 mt-4">
             <h1 class="text-center text-4xl w-full mb-4"><?php echo get_the_title() ?></h1>
             <?php if(preg_match($pattern, $content)){
                 echo preg_replace($pattern,"",$content);
