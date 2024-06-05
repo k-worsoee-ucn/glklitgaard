@@ -18,17 +18,18 @@
         <?php
         $tilbud = new WP_Query(array(
             'posts_per_page' => 1,
-            'post_type' => 'Tilbud',
+            'post_type' => 'krhimmelfarts-tilbud',
             'meta_query' => array(
                 'date' => array(
                     'key' => 'date_from',
+                    'compare' => 'EXISTS',
                     'type' => 'DATE',
                 ),
             ),
             'orderby' => array(
                 'date' => 'ASC',
-                'time_from' => 'ASC'
-            )
+            ),
+            'meta_key' => 'date_from'
         ));
 
         while ($tilbud->have_posts()) {
@@ -40,7 +41,7 @@
                     <h3 class="lg:text-4xl text-xl text-center lg:text-left col-span-4"><?php the_title() ?></h3>
                     <p class="col-span-4 lg:text-lg"><?php the_field("desc") ?></p>
                     <p class="col-span-4 lg:text-lg"><?php the_field("offer") ?></p>
-                    <a href="<?php echo get_site_url() . "/tilbud" ?>" class="col-start-2 col-span-2 knap text-center h-fit py-3 lg:mt-0 mt-10">Læs mere</a>
+                    <a href="<?php echo get_site_url() . "/priser" ?>" class="col-start-2 col-span-2 knap text-center h-fit py-3 lg:mt-0 mt-10">Læs mere</a>
                 </div>
             </div>
         <?php

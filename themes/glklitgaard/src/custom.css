@@ -42,7 +42,7 @@ button {
     padding:  3rem 2rem;
     height: fit-content;
 }
-.footer-logo-container > svg {
+.footer-logo-container > svg > svg {
     width: 100%;
     height: 100%;
     position: absolute;
