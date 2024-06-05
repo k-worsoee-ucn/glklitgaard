@@ -49,7 +49,7 @@ while($Sted->have_posts()){
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
 </div>
 <div class="lg:w-8/12 md:w-9/12 w-10/12 mx-auto">
-    <?php echo do_shortcode("[display-map id='233']"); ?>
+    <?php echo do_shortcode("[display-map id='753']"); ?>
 </div>
 </section>
 <?php get_footer(); ?>

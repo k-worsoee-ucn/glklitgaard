@@ -1485,10 +1485,6 @@ video {
   margin-top: auto;
 }
 
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
 .box-content {
   box-sizing: content-box;
 }
