@@ -136,6 +136,10 @@ section{height: fit-content; grid-column: 1/ span 12;}
     rotate: 0deg;
 }
 
+#Sun-figure > path {
+    max-height: 100%;
+}
+
 .knap{
     border-radius: 25px;
     font-weight: 600;

@@ -55,7 +55,7 @@ $pattern = "/<img.*?src[^\>]+>/"; ?>
 ));
 if ($Faciliteter->have_posts()) {
     $BelejAmnt = 1; ?>
-    <section class="bg-gray-200 grid gap-6 relative grid-cols-1 w-full h-fit wavey-section z-10">
+    <section class="bg-gray-200 grid gap-6 relative grid-cols-1 w-full h-fit wavey-section z-10 col-span-12">
         <div class="w-full rip absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
             <?php echo file_get_contents(get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
         </div>
@@ -181,7 +181,7 @@ $Faciliteter = new WP_Query(array(
 if ($Faciliteter->have_posts()) {
     $SjovjAmnt = 1;
     $flipFlop = 1; ?>
-    <section class="bg-third-brand-color relative w-full h-fit wavey-section z-10 py-10 shadow-sm">
+    <section class="bg-third-brand-color relative w-full h-fit wavey-section z-10 py-10 shadow-sm col-span-12">
         <div class="bg-gray-400 shadow-md absolute h-full w-11/12 pt-5 pl-7 right-0 box-content"></div>
         <div class="bg-gray-200 shadow-md absolute h-full w-11/12 pt-2 pl-4 right-0 mt-2 box-content"></div>
         <div class="z-10 bg-slate-50 relative min-h-96 mt-4 w-11/12 pl-5 py-10 pr-16 grid grid-cols-5 gap-5 ml-auto">
@@ -189,7 +189,7 @@ if ($Faciliteter->have_posts()) {
             while ($Faciliteter->have_posts()) {
                 $Faciliteter->the_post();
                 if ($Sjov != 2 and $Sjov != 4 and $Sjov != 7 and $Sjov != 10) { ?>
-                    <div class="relative row-span-2 z-10 col-start-1 col-span-5 lg:col-span-3 md:col-span-5 mr-auto bg-white p-3 mx-auto md:mx-0 md:mr-10 md:ml-auto md:w-10/12 w-full lg:w-11/12 inline-flex gap-3 my-auto">
+                    <div class="relative row-span-2 z-10 col-start-1 col-span-5 lg:col-span-3 md:col-span-5 mr-auto bg-white p-3 mx-auto md:mx-0 md:mr-10 md:ml-auto md:w-10/12 w-full lg:w-11/12 grid lg:grid-cols-2 lg:gap-5 gap-0 grid-cols-1 my-auto">
                         <a class="overflow-hidden w-full md:w-full h-full block bg-slate-900" href="<?php echo post_permalink(); ?>">
                             <img class="hover:opacity-85 hover:rotate-3 h-full duration-300 ease-in-out object-cover object-center hover:scale-110 " src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         </a>
