@@ -67,7 +67,7 @@ if ($Faciliteter->have_posts()) {
             <?php while ($Faciliteter->have_posts()) {
                 $Faciliteter->the_post();
                 if ($BelejAmnt % 2 != 0) { ?>
-                    <div class="relative w-full grid grid-cols-1 md:inline-flex">
+                    <div class="relative w-full flex flex-col lg:flex-row">
                         <div class="bg-slate-50 relative md:absolute p-5 md:pb-16 w-8/12 md:w-5/12 z-30 left-0 top-0 mx-auto md:mx-none">
                             <a class="overflow-hidden w-full md:w-full h-fit block bg-slate-900" href="<?php echo post_permalink(); ?>">
                                 <img class="hover:opacity-85 w-full hover:rotate-3 duration-300 ease-in-out object-cover object-center hover:scale-110 " src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
