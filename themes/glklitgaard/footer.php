@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="footer-logo-container w-8/12 lg:my-10 md:my-5 row-start-2 md:row-start-1 row-span-1 md:col-start-4 md:col-span-4 lg:col-start-5 z-10 md:w-10/12 mx-auto">
-            <?php echo file_get_contents( get_theme_file_uri("/assets/svg/footer-paper.svg")); ?>
+        <svg class="w-full h-full absolute -z-10 top-0 left-0"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/footer-paper.svg")); ?></svg>
         <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Logo af Gammel Klitgaard" class="mx-auto mt-3 w-10/12">
         <div class="inline-flex justify-evenly flex-nowrap w-full mx-auto h-8 mt-4">
         <?php   $SM = new WP_Query(array(

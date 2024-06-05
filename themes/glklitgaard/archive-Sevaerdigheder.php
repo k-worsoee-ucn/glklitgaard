@@ -17,15 +17,13 @@
     ));
     while ($Sted->have_posts()) {
         $Sted->the_post(); ?>
-        <div class="drop-shadow bg-gray-100 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5 gap-y-15 mt-8 shadow-sm relative w-10/12 lg:w-8/12 mx-auto">
+        <div class="drop-shadow bg-gray-100 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5 gap-y-15 mt-16 shadow-sm relative w-10/12 lg:w-8/12 mx-auto">
             <a class="simple-pic-drop min-h-60 relative -top-5 -left-5 h-2/3 w-auto max-h-20 z-20 col-start-1 row-start-1" href="<?php echo post_permalink();/*henter det link til postens enkel side*/ ?>">
                 <div class="absolute w-fit left-1/2 right-1/2 -top-5 -translate-x-1/2 z-10">
                     <?php echo file_get_contents(get_theme_file_uri("/assets/svg/tac.svg")); //henter og indsætter inholdet fra theme mappen/assets/svg/tac 
                     ?>
                 </div>
-                <img class="drop-shadow-sm h-full min-h-60 md:min-h-52 lg:min-h-40 w-full object-cover" src="<?php echo the_post_thumbnail_url(); // udskriver url'en for billede brugt til thumbnailen
-                                                                                                                ?>" alt="<?php the_title(); //Postens titel :)
-                                                                                                                                                                                                                ?>">
+                <img class="drop-shadow-sm h-full min-h-60 md:min-h-52 lg:min-h-40 w-full object-cover" src="<?php echo the_post_thumbnail_url(); // udskriver url'en for billede brugt til thumbnailen?>" alt="<?php the_title(); //Postens titel :)                                                                                                                                                                                                        ?>">
             </a>
             <?php if (get_field("sevaerdigheds_logo")) { ?>
                 <a class="duration-300 ease-in-out hover:scale-110 col-start-1 w-10/12 md:w-8/12 lg:w-6/12 mx-auto mt-64 row-start-1" href="<?php echo get_field("link_til_sted"); ?>"><img class="w-full h-auto object-contain" src="<?php echo get_field("sevaerdigheds_logo"); ?>" alt="<?php echo get_the_title() ?>"></a>

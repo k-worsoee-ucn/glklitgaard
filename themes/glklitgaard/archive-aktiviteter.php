@@ -1,9 +1,9 @@
 <?php get_header() ?>
-<div class="mt-40 col-span-12 text-center">
+<section class="mt-40 col-span-12 text-center">
     <h1 class="text-4xl">Kommende aktiviteter på</h1>
     <h1 class="text-4xl text-secondary-brand-color">Gl. Klitgaard Camping & Hytteby</h1>
-</div>
-<div class="wave-sect py-32 col-span-12">
+</section>
+<section class="wave-sect py-32 col-span-12">
     <div class="grid lg:grid-cols-3 grid-cols-2 lg:gap-32 lg:mx-32">
     <?php
     $activities = new WP_Query(array(
@@ -41,5 +41,5 @@
     }
     ?>
     </div>
-</div>
+</section>
 <?php get_footer() ?>
