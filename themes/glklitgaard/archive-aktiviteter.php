@@ -30,7 +30,7 @@
         $activities->the_post();
     ?>
 
-        <div class="bg-white lg:pt-10 pt-2 lg:pb-10 pb-5 lg:px-10 px-2 col-span-1 w-full shadow-lg mx-auto grid mb-10 lg:mb-0">
+        <div class="bg-slate-200 lg:pt-10 pt-2 lg:pb-10 pb-5 lg:px-10 px-2 col-span-1 w-full shadow-lg mx-auto grid mb-10 lg:mb-0">
             <img src="<?php echo the_post_thumbnail_url("small-thumb") ?>" alt="" class="w-full">
             <h2 class="text-center text-2xl my-5"><?php the_title() ?></h2>
             <p class="text-xl"><?php the_field("date")?> - <?php the_field("time_from") ?></p>
