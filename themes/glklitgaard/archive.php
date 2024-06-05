@@ -2,14 +2,14 @@
 <?php get_header();?>
 <section class="bg-gray-200 wavey-section">
 
-<h1 class="text-center"><?php echo post_type_archive_title( '', false );?></h1>
+<h1 class="text-center text-3xl"><?php echo post_type_archive_title( '', false );?></h1>
 </section>
-<div class="h-fit w-full rip bg-white">
+<div class="h-fit w-full rip bg-white fill-gray-200">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
 </div>
-<section class="Papery bg-yellow-100 pb-14 -mb-7 relative">
+<section class="Papery bg-yellow-100 pb-14 -mb-7 relative -mt-6">
 <hr class="hidden-push">
-<img src="<?php echo get_theme_file_uri("/assets/images/crumpled-paper.jpg") ?>" alt="crumpled paper" class="absolute w-full h-full object-fill opacity-20 top-0 left-0">
+<img src="<?php echo get_theme_file_uri("/assets/images/crumpled-paper.jpg") ?>" alt="crumpled paper" class="absolute w-full h-full object-cover object-center opacity-20 top-0 left-0">
 <div class="grid grid-cols-2 gap-10 w-10/12 mx-auto relative">
     <?php while(have_posts()){
         the_post();?>

@@ -15,6 +15,7 @@ window.addEventListener("load", ()=>{
         }, 500);
     }
 
+
     // Nu kommer det sjove! funktionalitet for solen. tiltænkt! at den kommer til bunden af siden og så kan bruges til at tage en til toppen af siden.
     // Umedbare tanker! kun på computer og tablet...
     

@@ -1,18 +1,16 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.dropdown:hover .dropdown.content {
-    @apply: block;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Kalam", "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-h1{@apply: text-4xl;}
-h2{@apply: text-2xl;}
-h3{@apply: text-xl;}
+h1{@apply: .text-3xl;}
+h2{@apply: .text-2xl;}
+h3{@apply: .text-xl;}
 h4{@apply: text-l;}
 
 p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
@@ -24,6 +22,7 @@ p,a,button{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
     width:120%;
     top: 0;
     left: -20%;
+    height: 125%;
 }
 
 html {
@@ -107,15 +106,14 @@ button {
 .rip{
     grid-column: 1/span 12;
     z-index: 4;
-    margin-bottom: -25px;
-    height: 25px;
+    height: 2.5rem;
     width: 100%;
     background-color: revert;
 }
 .rip > svg{
     width: 100%;
     height: 100%;
-    fill:rgb(229 231 235 / var(--tw-bg-opacity));
+    fill: inherit;
 }
 
 section{height: fit-content; grid-column: 1/ span 12;}
@@ -129,7 +127,7 @@ section{height: fit-content; grid-column: 1/ span 12;}
 .wavey-section{
     z-index: 4;
 }
-#Book-sol{transition: 350ms ease-in-out;}
+
 #Sun-figure{
     transition: 500ms linear;
     rotate: 0deg;
@@ -189,7 +187,7 @@ section{height: fit-content; grid-column: 1/ span 12;}
 }
 
 .Waves>svg{
-    width: 150%;
+    width: 250%;
 }
 
 .Sunset-bg{
@@ -412,6 +410,13 @@ section{height: fit-content; grid-column: 1/ span 12;}
 }
 
 
+.right > svg > path, .left > svg> path{
+    @apply fill-brand-lightgreen drop-shadow-sm;
+}
+.right > svg > path:hover, .left > svg> path:hover{
+    @apply fill-brand-darkgreen drop-shadow-md;
+}
+
 .slideshow-img > img{
     height: 100%;
     position: absolute;
@@ -629,3 +634,46 @@ section{height: fit-content; grid-column: 1/ span 12;}
 }
 
 
+.tape{
+    position: absolute;
+    max-width: 150px;
+    width: 150px;
+    height: 25px;
+    rotate: -30deg;
+    z-index: 5;
+    opacity: 0.60;
+}
+
+.tape-left{
+    top: 0;
+    left: -50px;
+}
+
+.tape-right{
+    bottom: 0;
+    right: -50px;
+}
+
+#Pladskort > img:first-of-type{
+    fill:black;
+    mask-image: url("../assets/svg/Paper-rip-rotated.svg");
+    mask-repeat: no-repeat;
+    mask-position: 0 0;
+}
+#Pladskort > img:last-of-type{
+    object-position: 0 -1.5rem;
+}
+
+.paper-overlay{
+    mask-image: url("../assets/svg/paper-overlay.svg");
+    mask-repeat: no-repeat;
+    mask-position: right;
+    mask-size: 100% 100%;
+}
+
+.TypeInfo > i{
+    margin: auto 0;
+    color: #F78F1E;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+}

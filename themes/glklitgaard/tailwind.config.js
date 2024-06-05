@@ -15,8 +15,9 @@ module.exports = {
         "main-interaction-color" : "#6BD9F2",
         "brand-lightgreen" : "#B6D936",
         "brand-darkgreen" : "#6B8C23",
+        "text-secondary-brand-color" : "#F78F1E",
 
-      }
+      },
     },
   },
   plugins: [],

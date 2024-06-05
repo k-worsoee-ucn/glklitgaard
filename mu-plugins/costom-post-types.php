@@ -42,8 +42,53 @@ function PostTypes() {
         ),
         "menu_icon" => "dashicons-admin-multisite"
     ));
+    register_post_type("Naturguide", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail"
+        ),
+        "rewrite" => array(
+            "slug" => "naturguide"
+        ),
+        "labels" => array(
+            "name" => "Naturguide",
+            "add_new_item" => "Tilføj Til Naturguiden",
+            "add_new" => "Tilføj Til Naturguide",
+            "edit_item" => "Ænder I Naturguide",
+            "all_items" => "Naturguide",
+            "singular_name" => "Naturguide",
+        ),
+        "menu_icon" => "dashicons-buddicons-replies"
+    ));
 
-    register_post_type("Seværdigheder", array(
+    register_post_type("Ferie-byer", array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "public" => true,
+        "supports" => array(
+            "editor",
+            "title",
+            "thumbnail"
+        ),
+        "rewrite" => array(
+            "slug" => "ferie-byer"
+        ),
+        "labels" => array(
+            "name" => "Ferie byer",
+            "add_new_item" => "Tilføj Ferie by",
+            "add_new" => "Tilføj Ferie by",
+            "edit_item" => "Ænder Ferie by",
+            "all_items" => "Ferie byer",
+            "singular_name" => "Ferie by",
+        ),
+        "menu_icon" => "dashicons-location-alt"
+    ));
+
+    register_post_type("Sevaerdigheder", array(
         "has_archive" => true,
         "show_in_rest" => true,
         "public" => true,
@@ -51,17 +96,16 @@ function PostTypes() {
             "editor",
             "title",
             "thumbnail",
-            "excerpt"
         ),
         "rewrite" => array(
-            "slug" => "sevraerdighed"
+            "slug" => "sevaerdighed"
         ),
         "labels" => array(
             "name" => "Seværdigheder",
             "add_new_item" => "Tilføj Seværdighed",
             "add_new" => "Tilføj Seværdighed",
             "edit_item" => "Ænder Seværdighed",
-            "all_items" => "Alle Seværdigheder",
+            "all_items" => "Seværdigheder",
             "singular_name" => "Seværdighed",
         ),
         "menu_icon" => "dashicons-tickets"
@@ -206,28 +250,6 @@ function PostTypes() {
             "singular_name" => "Pinse Tilbud",
         ),
         "menu_icon" => "dashicons-tag"
-    ));
-    register_post_type("Priser", array(
-        "show_in_rest" => true,
-        "public" => true,
-        "supports" => array(
-            "editor",
-            "title",
-            "thumbnail",
-            "excerpt"
-        ),
-        "rewrite" => array(
-            "slug" => "priser"
-        ),
-        "labels" => array(
-            "name" => "Priser",
-            "add_new_item" => "Tilføj Priser",
-            "add_new" => "Tilføj Pris",
-            "edit_item" => "Ænder Priser",
-            "all_items" => "Alle Priser",
-            "singular_name" => "Pris",
-        ),
-        "menu_icon" => "dashicons-money-alt"
     ));
     register_post_type("Nyheder", array(
         "show_in_rest" => true,

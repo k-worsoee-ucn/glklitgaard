@@ -29,7 +29,7 @@
                 <?php };?>
         </div>
     </div>
-    <div class="footer-logo-container w-8/12 lg:my-10 md:my-5 row-start-2 md:row-start-1 row-span-1 md:col-start-4 md:col-span-4 lg:col-start-5 z-1 md:w-10/12 mx-auto">
+    <div class="footer-logo-container w-8/12 lg:my-10 md:my-5 row-start-2 md:row-start-1 row-span-1 md:col-start-4 md:col-span-4 lg:col-start-5 z-1 md:w-10/12 mx-auto fill-slate-50">
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/footer-paper.svg")); ?>
         <img src="<?php echo get_theme_file_uri("/assets/logos/glklitgaard.png") ?>" alt="Logo af Gammel Klitgaard" class="mx-auto mt-3 w-10/12">
         <div class="inline-flex justify-evenly flex-nowrap w-full mx-auto h-8 mt-4">
@@ -50,7 +50,7 @@
             <?php
             $locations = get_nav_menu_locations();
             $menu = wp_get_nav_menu_object( $locations['footer_menu'] );
-            $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+            $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'ASC' ) );
 
             foreach($menuitems as $item){?>
                 <li class="mb-3 mx-auto md:ml-auto grid grid-cols-1 h-fit w-fit"><a href="<?php echo $item->url?>"><?php echo $item->title?></a><div class="hover-line h-0.5"></div></li>
