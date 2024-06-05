@@ -5,7 +5,7 @@ $Faciliteter = new WP_Query(array(
 ));
 $pattern = "/<img.*?src[^\>]+>/";?>
 
-<section class="relative bg-slate-100 h-fit min-h-96">
+<section class="relative bg-slate-100 h-fit min-h-96 -z-10">
         <div class="Faci-change h-fit z-10 bg-slate-100 bg-opacity-75 bottom-1/3 5 lg:pb-28 pt-72 lg:bottom-0 w-full lg:w-6/12 absolute left-0">
             <?php while($Faciliteter->have_posts()){$Faciliteter->the_post()?>
             <h1 class="text-center py-2 text-4xl">Vores <?php echo post_type_archive_title( '', false );?></h1>
@@ -14,15 +14,15 @@ $pattern = "/<img.*?src[^\>]+>/";?>
             <!-- <a href="<?php echo get_the_permalink(); //ligende med tidligere ting, men vi henter linket fra en seperat fil og sætter ind som href'en.?>" class="knap text-center px-3 py-1 mx-auto w-fit mt-5 font-semibold grid">Se den her</a>-->
         <?php }; wp_reset_postdata(); ?>
     </div>
-    <div class="h-fit w-full rip -mb-10 fill-slate-100 z-10 opacity-75 absolute hidden md:block lg:-rotate-90 left-0 lg:translate-x-5">
+    <div class="h-fit w-full rip -mb-10 fill-slate-100 z-10 opacity-75 absolute hidden md:block lg:rotate-90 left-0 lg:translate-x-5">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
     </div>
     <div class="absolute top-0 left-0 w-full md:min-h-72 min-h-96">
-            <div class=" overflow-hidden min-h-96 shadow-lg relative w-full h-full">
-            <div class="relative h-full min-h-96 w-full overflow-hidden">
+            <div class="min-h-72 overflow-hidden lg:min-h-96 md:min-h-80 slideshow shadow-lg relative w-full h-full">
+            <div class="relative slideshow-img h-full min-h-72 lg:min-h-96 md:min-h-80 w-full overflow-hidden">
     <?php while(have_posts()){the_post();
         $content = strip_tags(get_the_content(),'<img>'); // fjerner alle tags, undtaget img
-             // REGEX til at finde billede
+            // REGEX til at finde billede
             if(preg_match($pattern, $content)){
                 $content = str_replace("<","<!--Cut here--> <",$content); //finder, erstatter, hvilken string
                 $content = str_replace(">","> <!--Cut here-->",$content); //erstatter
@@ -34,13 +34,13 @@ $pattern = "/<img.*?src[^\>]+>/";?>
                         $i++; // increase.
                     }
                 }}else{ ?> <img class="w-full h-full" src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo the_title();?>"> <?php }?>
-                </div>
-                <div class="SlideControls shadow-inner h-fit w-full lg:w-7/12 absolute bottom-10 right-0 z-10 inline-flex gap-5 justify-center"></div>
+                
             <?php };?>
+            </div>
+            <div class="SlideControls shadow-inner h-fit w-full lg:w-7/12 absolute bottom-10 right-0 z-10 inline-flex gap-5 justify-center"></div>
             </div>
         </div>
 </section>
-
 <?php $Faciliteter = new WP_Query(array(
             'posts_per_page'    => -1,
             'orderby'    => "title",
@@ -50,7 +50,7 @@ $pattern = "/<img.*?src[^\>]+>/";?>
             'order' => 'ASC',
         ));if($Faciliteter->have_posts()){ $BelejAmnt = 1;?>
 <section class="bg-gray-200 grid gap-6 relative grid-cols-1 w-full h-fit wavey-section z-10">
-    <div class="w-full rip rotate-180 absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
+    <div class="w-full rip absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
         </div>
     <div class="Waves absolute top-14 h-fit overflow-x-hidden w-full ease-linear duration-150 -z-10">
