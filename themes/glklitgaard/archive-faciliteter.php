@@ -219,7 +219,7 @@ if ($Faciliteter->have_posts()) {
                     </div>
                 <?php } else { ?>
                     <?php if ($flipFlop % 2 != 0) { ?>
-                        <div class="rotate-3 col-span-2 md:col-span-3 row-span-3 md:col-start-auto lg:col-start-4 row-spandrop-shadow bg-yellow-100 grid grid-cols-1 lg:grid-cols-2 gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
+                        <div class="rotate-3 col-span-5 md:col-span-3 row-span-3 md:col-start-auto lg:col-start-4 drop-shadow bg-yellow-100 grid grid-cols-1 gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
                             <a class="simple-pic-drop min-h-60 relative mx-auto h-2/3 w-10/12 max-h-20 z-10" href="<?php echo post_permalink();/*henter det link til postens enkel side*/ ?>">
                                 <div class="absolute w-fit left-1/2 right-1/2 -top-5 -translate-x-1/2 z-20">
                                     <?php echo file_get_contents(get_theme_file_uri("/assets/svg/tac.svg")); //henter og indsætter inholdet fra theme mappen/assets/svg/tac 
@@ -256,7 +256,7 @@ if ($Faciliteter->have_posts()) {
                             </div>
                         </div>
                     <?php } else { ?>
-                        <div class="col-span-2 md:col-span-3 row-span-3 md:col-start-auto lg:col-start-4 row-spandrop-shadow bg-yellow-100 grid grid-cols-1 lg:grid-cols-2 gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
+                        <div class="col-span-2 md:col-span-3 row-span-4 md:col-start-auto lg:col-start-4 row-spandrop-shadow bg-yellow-100 grid grid-cols-1 lg:grid-cols-2 gap-5 gap-y-15 shadow-sm relative w-10/12 mx-auto">
                             <a class="simple-pic-drop min-h-60 relative mx-auto h-2/3 w-10/12 max-h-20 z-10" href="<?php echo post_permalink();/*henter det link til postens enkel side*/ ?>">
                                 <div class="absolute w-fit left-1/2 right-1/2 -top-5 -translate-x-1/2 z-20">
                                     <?php echo file_get_contents(get_theme_file_uri("/assets/svg/tac.svg")); //henter og indsætter inholdet fra theme mappen/assets/svg/tac 
