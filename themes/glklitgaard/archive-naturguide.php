@@ -58,7 +58,7 @@
             <div class="fill-main-brand-color opacity-65 absolute h-full w-10/12 top-0 left-0 -z-10">
                         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/footer-paper.svg")); ?>
             </div>
-            <img class="z-20 paper-overlay relative w-full object-cover object-center -bottom-1/4 md:-bottom-5 lg:-bottom-1/2 right-0 col-start-2 col-span-1 row-start-1 row-span-1" src="<?php echo get_the_post_thumbnail_url();?>" alt="Closeup af planten <?php echo get_the_title(); ?>">
+            <img class="aspect-square z-20 paper-overlay relative w-full object-cover object-center -bottom-1/4 md:-bottom-5 lg:-bottom-1/2 right-0 col-start-2 col-span-1 row-start-1 row-span-1" src="<?php echo get_the_post_thumbnail_url();?>" alt="Closeup af planten <?php echo get_the_title(); ?>">
                 <div class="py-10 pl-10 w-full col-start-1 col-span-1 row-start-1 row-span-1">
                     <h3 class="text-xl"><?php echo get_the_title(); ?></h3>
             <?php 
