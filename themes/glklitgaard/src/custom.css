@@ -293,6 +293,9 @@ section{height: fit-content; grid-column: 1/ span 12;}
     .belejFaci {
         grid-template-columns: 40% 60%;
     }
+    .belejFaci2 {
+        grid-template-columns: 60% 40%;
+    }
 
 }
 
