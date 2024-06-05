@@ -246,8 +246,8 @@ section{height: fit-content; grid-column: 1/ span 12;}
         background-size: contain;
     }
 
-    .fp-news-container h2 {
-        margin-top: -10%;
+    .fp-news-container > h2 {
+        margin-top: -20%;
     }
 
     .glk-hero {
