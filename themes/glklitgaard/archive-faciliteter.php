@@ -113,16 +113,16 @@ if ($Faciliteter->have_posts()) {
                         </div>
                     </div>
                 <?php } else { ?>
-                    <div class="relative col-span-1 grid grid-cols-1 belejFaci">
+                    <div class="relative col-span-1 grid grid-cols-1 belejFaci2">
                         <div class="bg-slate-50 relative md:absolute p-5 md:pb-16 w-8/12 md:w-5/12 z-30 right-0 top-0 mx-auto md:mx-none">
                             <a class="overflow-hidden w-full md:w-full h-fit block bg-slate-900" href="<?php echo post_permalink(); ?>">
                                 <img class="hover:opacity-85 hover:rotate-3 duration-300 ease-in-out object-cover object-center hover:scale-110 " src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                             </a>
                         </div>
-                        <div class="relative w-10/12 md:w-8/12 scale-x-100 min-h-fit h-1/5 ml-0 md:ml-auto md:my-10">
-                            <div class="scale-x-100 w-full mx-auto grid grid-cols-1  bg-yellow-100 py-8 pl-10">
-                                <h3 class="text-2xl w-full md:w-8/12 mr-10 ml-auto"><?php echo get_the_title(); ?></h3>
-                                <div class="w-full md:w-8/12 mr-10 ml-auto">
+                        <div class="relative w-10/12 md:w-12/12 min-h-fit h-1/5 ml-0 md:ml-auto md:my-10">
+                            <div class="w-full mx-auto grid grid-cols-1  bg-yellow-100 py-8 pl-10">
+                                <h3 class="text-2xl w-full md:w-8/12 mr-auto lg:ml-10 ml-0"><?php echo get_the_title(); ?></h3>
+                                <div class="w-full md:w-8/12 mr-auto lg:ml-10 ml-0">
                                     <?php if (has_excerpt()) {
                                         echo get_the_excerpt();
                                     } else {

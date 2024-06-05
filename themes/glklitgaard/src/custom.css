@@ -245,6 +245,10 @@ section{height: fit-content; grid-column: 1/ span 12;}
         background-size: contain;
     }
 
+    .fp-news-container h2 {
+        margin-top: -10%;
+    }
+
     .glk-hero {
         min-height: 70vh;
     }
@@ -292,6 +296,21 @@ section{height: fit-content; grid-column: 1/ span 12;}
 
     .belejFaci {
         grid-template-columns: 40% 60%;
+    }
+    .belejFaci2 {
+        grid-template-columns: 60% 40%;
+    }
+
+    .belejFaci2 > div:last-child {
+        transform: scaleX(-1);
+    }
+
+    .belejFaci2 > div:last-child > * {
+        transform: scaleX(-1);
+    }
+
+    .belejFaci2 > div:last-child > svg:first-of-type > path {
+        transform: scaleX(-1) translateX(-100%);
     }
 
 

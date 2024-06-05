@@ -13,7 +13,7 @@
 </section>
 <section class="fp-news-container col-start-1 col-span-12 grid grid-cols-12 z-20 mt-20">
     <img src="<?php echo get_theme_file_uri("/assets/images/newsbg.png") ?>" alt="" class="col-start-1 col-span-12 -z-10 row-start-1 row-span-3 lg:h-full w-full object-cover lg:-mt-36 -mt-52">
-    <h2 class="text-4xl row-start-2 col-start-1 col-span-12 text-center lg:-mt-60 -mt-20">Nyt på campingpladsen</h2>
+    <h2 class="text-4xl row-start-2 col-start-1 col-span-12 text-center  -mt-20">Nyt på campingpladsen</h2>
     <div class="fp-news lg:col-start-3 lg:col-span-9 col-start-2 col-span-10 grid grid-cols-10 w-full lg:pb-64 row-start-3 row-span-1 lg:-mt-52">
         <?php
         $tilbud = new WP_Query(array(
@@ -125,12 +125,12 @@
             while ($aktiviteter->have_posts()) {
                 $aktiviteter->the_post();
             ?>
-                <div class="bg-white pt-5 px-5 pb-10 shadow-lg lg:mt-0 mt-10">
+                <div class="bg-white pt-5 px-5 pb-10 shadow-lg lg:mt-0 mt-10 grid">
                     <img src="<?php echo the_post_thumbnail_url() ?>" alt="" class="aspect-square object-cover">
                     <h2 class="mt-5"><?php echo the_title() ?></h2>
                     <p><?php echo the_field("date") ?> - <?php echo the_field("time_from") ?></p>
                     <p>Pris: <?php echo the_field("price") ?></p>
-                    <a class="lg:mx-24 mx-16 knap" href="<?php echo the_permalink() ?>"><button class="bg-main-interaction-color mt-5 px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
+                    <a class="mx-auto knap" href="<?php echo the_permalink() ?>"><button class="bg-main-interaction-color px-10 py-2 rounded-full mx-auto font-bold text-lg">Læs mere</button></a>
                 </div>
             <?php
             }
