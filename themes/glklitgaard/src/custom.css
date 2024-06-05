@@ -246,10 +246,6 @@ section{height: fit-content; grid-column: 1/ span 12;}
         background-size: contain;
     }
 
-    .cpnews {
-        margin-top: -15%;
-    }
-
     .glk-hero {
         min-height: 70vh;
     }
