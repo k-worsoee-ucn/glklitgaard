@@ -7,7 +7,7 @@
         <div class="Waves absolute top-2 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?>
         </div>
-        <div class="w-full rip rotate-180 absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
+        <div class="w-full rip absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
         </div>
         <div class="col-start-1 mx-auto w-10/12 lg:mx-0 md:w-8/12 lg:ml-auto">

@@ -6,7 +6,7 @@ $hasIMG = false;
 <h1 class="text-center py-6 mt-5 text-3xl"><?php the_title();?></h1>
 </section>
 <div class="h-fit w-full rip fill-gray-200 -mb-10">
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+        <svg class="rotate-180 -mt-5"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
 </div>
             <?php $content = strip_tags(get_the_content(), '<img>'); // fjerner alle tags, undtaget img
             $pattern = "/<img.*?src[^\>]+>/"; // REGEX til at finde billede
@@ -36,7 +36,7 @@ $hasIMG = false;
             <?php ;?>
 <section class="bg-gray-200 wavey-section relative w-full z-20 grid grid-cols-12 pt-10 pb-14">
     <div class="w-full rip rotate-180 absolute bottom-full h-6 -top-6 fill-gray-200">
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+        <svg class="rotate-180"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
     </div>
     <div class="Waves absolute top-5 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?>
@@ -215,10 +215,10 @@ $hasIMG = false;
                                             } ?> noget for dig?</p>
             <a href="<?php echo file_get_contents( get_theme_file_uri("/assets/links/Booking-site.txt"));?>" class="knap col-start-2 mb-5 text-center px-3 py-1 mx-auto mt-auto font-semibold">Book nu</a>
             </div>
-            <div class="h-fit w-full paper-rip absolute left-0 -top-5 rotate-180">
+            <div class="h-fit w-full paper-rip absolute left-0 -top-5">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
-            <div class="h-fit w-full paper-rip absolute left-0 bottom-0">
+            <div class="h-fit w-full paper-rip absolute left-0 bottom-0 rotate-180">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
         </div>    
@@ -329,7 +329,7 @@ $hasIMG = false;
             <img src="<?php echo get_theme_file_uri("/assets/images/ctaimg3.png") ?>" alt="" class="w-full h-3/5 object-cover">
         </div>
     </div>
-    <div class="w-full rip rotate-180 absolute bottom-full h-6 fill-gray-100">
+    <div class="w-full rip absolute bottom-full h-6 fill-gray-100">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
     </div>
     <div class="Waves absolute top-8 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">

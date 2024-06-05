@@ -17,7 +17,7 @@ $pattern = "/<img.*?src[^\>]+>/";?>
             echo get_the_title(); }else{if($byer == $By->found_posts){echo " og ".get_the_title();}else{ echo ", ".get_the_title();}} $byer++; };?>
             </h3>
         </div>
-    <div class="h-fit w-full rip -mb-10 fill-slate-100 z-10 opacity-75 absolute lg:-rotate-90 left-0 lg:translate-x-5">
+    <div class="h-fit w-full rip -mb-10 fill-slate-100 z-10 opacity-75 absolute lg:rotate-90 left-0 lg:translate-x-5">
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
     </div>
     <div class="absolute top-0 left-0 w-full min-h-72">
@@ -50,7 +50,7 @@ $AmountBy = 1;
 while($By->have_posts()){
     $By->the_post(); if($AmountBy % 2 != 0){ ?>
     <section class="bg-gray-200 relative w-full z-30 grid gap-5 grid-cols-1 lg:grid-cols-3 pt-10 pb-14">
-        <div class="w-full rip rotate-180 absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
+        <div class="w-full rip absolute bottom-full h-6 -top-6 z-20 fill-gray-200">
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
         </div>
         <div class="Waves absolute top-5 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
@@ -85,7 +85,7 @@ while($By->have_posts()){
         </div>
         </div>
         <?php if($AmountBy != 10){?>
-            <div class="w-full rip absolute top-full h-6 -bottom-6 fill-gray-200">
+            <div class="w-full rip absolute top-full h-6 -bottom-6 fill-gray-200 rotate-180">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
         <?php }?>

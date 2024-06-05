@@ -1,9 +1,9 @@
 <?php get_header();?>
 
-<section class="bg-gray-200 z-20 pt-16">
+<section class="bg-[#EFEFEA] z-20 pt-16">
 <h1 class="text-center py-2 text-3xl">Oplevelser</h1>
-<div class="h-fit w-full rip fill-gray-200 -mb-10 z-20 relative">
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+<div class="h-fit w-full rip fill-gray-200 -mb-5 z-20 relative">
+        <svg class="rotate-180 -mt-5"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
 </div>
 </section>
 <section class="relative overflow-hidden">

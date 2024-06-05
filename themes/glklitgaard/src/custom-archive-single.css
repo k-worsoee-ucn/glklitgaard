@@ -68,6 +68,7 @@
     mask-image: url("../assets/svg/Paper-rip-rotated.svg");
     mask-repeat: no-repeat;
     mask-position: 0 0;
+    mask-size: 100%;
 }
 
 .paper-crumb > img:last-of-type{

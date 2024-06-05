@@ -113,7 +113,10 @@ button {
 .rip > svg{
     width: 100%;
     height: 100%;
-    fill: inherit;
+}
+
+.rip > svg > svg > path {
+    width: 100%;
 }
 
 section{height: fit-content; grid-column: 1/ span 12;}

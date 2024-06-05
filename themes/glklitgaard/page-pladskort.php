@@ -5,7 +5,7 @@
 <h1 class="text-center text-3xl py-6"><?php the_title();?></h1>
 </section>
 <div class="h-fit w-full rip fill-gray-200 -mb-10">
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+    <svg class="rotate-180 -mt-5"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
 </div>
 <section class="relative grid-cols-3 lg:grid-cols-4 grid gap-10 w-full py-10 bg-brand-darkgreen col-start-1 col-span-12">
 <?php $content = strip_tags(get_the_content(), '<img>'); // fjerner alle tags, undtaget img
@@ -51,7 +51,7 @@
 
 <section class="w-full relative pt-24 bg-brand-darkgreen">
     <div class="mt-48 mx-auto relative w-10/12 md:w-8/12 lg:w-6/12 bg-yellow-100 z-20 pb-28 pt-5 px-10">
-    <div class="h-fit w-full rip fill-yellow-100 rotate-180 absolute bottom-full left-0">
+    <div class="h-fit w-full rip fill-yellow-100 -mb-5 absolute bottom-full left-0">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
     </div>
         <h3 class="text-4xl text-center">Skal vi være dig nye campingsted?</h3>

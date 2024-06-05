@@ -17,7 +17,7 @@
     </div>
 <?php }?>
     <div class="Waves absolute top-5 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
-            <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?>
+            <svg><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?></svg>
     </div>
     <?php $title = strtolower(get_the_title());?>
     </section>
@@ -26,7 +26,7 @@
     if(str_contains($title, "turist") OR str_contains($title, "turister") OR str_contains($title, "fastligger")){ ?>
     <section class="relative w-full h-fit bg-yellow-100">
     <div class="h-fit w-full rip fill-gray-200 absolute top-0 z-20">
-            <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+            <svg class="rotate-180 -mt-5"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
     </div>
     <div class="absolute h-full w-full">
         <img class="opacity-25 absolute h-full w-full" src="<?php echo get_theme_file_uri("/assets/images/crumpled-paper.jpg")?>">
@@ -72,14 +72,14 @@
                 </div>
                 <a href="<?php echo get_site_url("/vores-priser");?>" class="knap relative z-20 flex w-fit col-start-2 text-center px-3 py-1 mx-auto mt-auto font-semibold mb-16">Se alle vores priser</a>
             <div class="h-fit w-full rip fill-gray-200 absolute -bottom-6 z-20 rotate-180">
-                <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+                <svg class="rotate-180"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
             </div>
             </section>
 <?php }}}; wp_reset_postdata();
 if(str_contains($title, "turist") OR str_contains($title, "turister")){ ?>
 <section class="bg-gray-200 wavey-section z-10 w-full pt-16 pb-2 relative">
     <div class="h-fit w-full rip fill-gray-200 absolute top-full z-20">
-                <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+                <svg class="rotate-180 -mt-5"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
     </div>
     <div class="Waves absolute top-5 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?>
@@ -108,7 +108,7 @@ if(str_contains($title, "turist") OR str_contains($title, "turister")){ ?>
 if(str_contains($title, "fastligger")){ ?>
 <section class="bg-gray-200 wavey-section z-10 w-full pt-16 pb-2 relative">
     <div class="h-fit w-full rip fill-gray-200 absolute top-full z-20">
-                <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+        <svg class="rotate-180 -mt-5"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?></svg>
     </div>
     <div class="Waves absolute top-5 h-fit overflow-x-hidden w-full -z-10 ease-linear duration-150">    
             <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Wave.svg")); ?>
@@ -142,7 +142,7 @@ if(str_contains($title, "fastligger")){ ?>
                 <h2 class="text-center text-3xl pt-10">Skal vi være din nye desintation?</h2>
                 <a href="<?php echo get_post_type_archive_link("udlejning");?>" class="knap text-center px-3 py-1 mx-auto mb-16 font-semibold">Se vores udlejnings muligheder</a>
             </div>
-            <div class="h-5 w-full paper-rip absolute left-0 -top-5 rotate-180">
+            <div class="h-5 w-full paper-rip absolute left-0 -top-5">
                 <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
             </div>
         </div>

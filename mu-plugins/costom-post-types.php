@@ -98,7 +98,7 @@ function PostTypes() {
             "thumbnail",
         ),
         "rewrite" => array(
-            "slug" => "sevaerdighed"
+            "slug" => "sevaerdigheder"
         ),
         "labels" => array(
             "name" => "Seværdigheder",

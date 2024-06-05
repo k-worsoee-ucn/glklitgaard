@@ -2,12 +2,12 @@
 <footer class="grid grid-cols-1 gap-7 md:grid-cols-10 lg:grid-cols-12  md:gap-3 lg:gap-0 z-40 relative bg-brand-darkgreen">
     <?php wp_footer();?>
     <div id="Foot-Rip" class="w-full col-start-1 col-span-1 md:col-span-10 lg:col-span-12 row-span-1 row-start-1 absolute -top-1">
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
+        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip-foot.svg")); ?>
+        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip-foot.svg")); ?>
+        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip-foot.svg")); ?>
     </div>
     <div class="Footer-deco absolute top-0 w-full h-full overflow-hidden">
-        <?php echo file_get_contents( get_theme_file_uri("/assets/svg/scales.svg")); ?>
+        <svg class="w-full h-full"><?php echo file_get_contents( get_theme_file_uri("/assets/svg/scales.svg")); ?></svg>
     </div>
     <div class="footer-contact mt-5 md:mt-8 lg:mt-10 row-start-1 my-0 row-span-1 w-8/10 mx-auto md:my-10 lg:my-10 lg:w-full md:w-10/12 md:ml-auto md:col-start-1 md:col-span-3 lg:col-start-2 lg:col-span-3">
         <h2 class="text-white text-4xl text-centered md:text-left lg:text-left">Kontakt</h2>

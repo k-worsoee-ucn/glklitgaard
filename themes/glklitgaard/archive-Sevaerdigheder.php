@@ -3,7 +3,7 @@
 
 <h1 class="text-center text-3xl"><?php echo post_type_archive_title( '', false );?></h1>
 </section>
-<div class="h-fit w-full rip bg-white fill-gray-200">
+<div class="h-fit w-full rip bg-white fill-gray-200 rotate-180">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
 </div>
 <section class="bg-yellow-100 w-full h-full -mt-6 pb-24">
@@ -45,7 +45,7 @@ while($Sted->have_posts()){
 <?php }?>
 </section>
 <section class="w-full relative bg-gray-200 pb-24">
-<div class="h-fit w-full rip  fill-gray-200 absolute bottom-full mt-3 rotate-180 z-20">
+<div class="h-fit w-full rip  fill-gray-200 absolute bottom-full mt-3 z-20">
         <?php echo file_get_contents( get_theme_file_uri("/assets/svg/Paper-rip.svg")); ?>
 </div>
 <div class="lg:w-8/12 md:w-9/12 w-10/12 mx-auto">

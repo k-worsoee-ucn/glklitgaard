@@ -33,7 +33,7 @@ $pattern = "/<img.*?src[^\>]+>/";?>
                         echo $p; //print billede ud
                         $i++; // increase.
                     }
-                }}else{ ?> <img class="w-full h-full" src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo get_title();?>"> <?php }?>
+                }}else{ ?> <img class="w-full h-full" src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo the_title();?>"> <?php }?>
                 </div>
                 <div class="SlideControls shadow-inner h-fit w-full lg:w-7/12 absolute bottom-10 right-0 z-10 inline-flex gap-5 justify-center"></div>
             <?php };?>
