@@ -13,7 +13,7 @@
 </section>
 <section class="fp-news-container col-start-1 col-span-12 grid grid-cols-12 z-20 mt-20">
     <img src="<?php echo get_theme_file_uri("/assets/images/newsbg.png") ?>" alt="" class="col-start-1 col-span-12 -z-10 row-start-1 row-span-3 lg:h-full w-full object-cover lg:-mt-36 -mt-52">
-    <h2 class="text-4xl row-start-2 col-start-1 col-span-12 text-center  -mt-20">Nyt på campingpladsen</h2>
+    <h2 class="text-4xl row-start-2 col-start-1 col-span-12 text-center">Nyt på campingpladsen</h2>
     <div class="fp-news lg:col-start-3 lg:col-span-9 col-start-2 col-span-10 grid grid-cols-10 w-full lg:pb-64 row-start-3 row-span-1 lg:-mt-52">
         <?php
         $tilbud = new WP_Query(array(
